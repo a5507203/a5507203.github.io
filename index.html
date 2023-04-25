@@ -1,270 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  body {
-    font-size: 16px;
-    font-family: Helvetica, arial, sans-serif;
-  }
-  .small {
-    font-size: 12px; /* 75% of the baseline */
-  }
-  .large {
-    font-size: 20px; /* 125% of the baseline */
-  }
-  img { max-width: 100%; margin-bottom: 30px;}
-  table { width: 100%; }
-  #subtitle, #share, #slider, #sidebar{
-    display:none;
-  }
-  .headshot { float: left; margin-right: 30px; }
-  @media (max-width: 700px){
-    .headshot { float: none; display: block; margin: 0 0 30px 0; }
 
-  }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Helvetica, arial, sans-serif;
+        }
+
+        .small {
+            font-size: 12px;
+            /* 75% of the baseline */
+        }
+
+        .large {
+            font-size: 20px;
+            /* 125% of the baseline */
+        }
+
+        img {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        #subtitle,
+        #share,
+        #slider,
+        #sidebar {
+            display: none;
+        }
+
+        .headshot {
+            float: left;
+            margin-right: 30px;
+        }
+
+        @media (max-width: 700px) {
+            .headshot {
+                float: none;
+                display: block;
+                margin: 0 0 30px 0;
+            }
+
+        }
 
 
 
-  a {
-    background-image: linear-gradient(
-      to right,
-      #392cb3 50%,
-      #392cb3 50%,
-      rgb(0, 15, 83) 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    padding: 3px 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-  }
+        a {
+            background-image: linear-gradient(to right,
+                    #392cb3 50%,
+                    #392cb3 50%,
+                    rgb(0, 15, 83) 50%);
+            background-size: 200% 100%;
+            background-position: -100%;
+            display: inline-block;
+            padding: 3px 0;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease-in-out;
+        }
 
-  a:before{
-    content: '';
-    background: #54b3d6;
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    transition: all 0.3s ease-in-out;
-  }
+        a:before {
+            content: '';
+            background: #54b3d6;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            transition: all 0.3s ease-in-out;
+        }
 
-  a:hover {
-  background-position: 0;
-  }
+        a:hover {
+            background-position: 0;
+        }
 
-  a:hover::before{
-    width: 100%;
-  }
+        a:hover::before {
+            width: 100%;
+        }
 
-  .gsc_a_at {
-    padding: 8px 0;
-    font-size: 16px;
-  }
+        .gsc_a_at {
+            padding: 8px 0;
+            font-size: 16px;
+        }
 
-  .gsc_a_aw {
-    padding: 2px 0;
-    font-size: 14px;
-  }
-  .blue-text { color:blue; }
-  body, td, input, button {
-    font-size: 13px;
-    font-family: Arial,sans-serif;
-    line-height: 1.24;
-}
-  .gs_gray {
-    color: #777777;
-}
-table {
-    border-collapse: collapse;
-    border-width: 0;
-    empty-cells: show;
-}
-html, body, form, table, div, h1, h2, h3, h4, h5, h6, img, ol, ul, li, button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-  </style>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        .gsc_a_aw {
+            padding: 2px 0;
+            font-size: 14px;
+        }
 
-  ga('create', 'UA-59997976-1', 'auto');
-  ga('send', 'pageview');
-  </script>
+        .blue-text {
+            color: blue;
+        }
 
-  <title>Yu Yao</title>
-<!--       <title>Yu Yao - MBZUAI</title> -->
+        body,
+        td,
+        input,
+        button {
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            line-height: 1.24;
+        }
+
+        .gs_gray {
+            color: #777777;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-width: 0;
+            empty-cells: show;
+        }
+
+        html,
+        body,
+        form,
+        table,
+        div,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        img,
+        ol,
+        ul,
+        li,
+        button {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-59997976-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <title>Yu Yao</title>
+    <!--       <title>Yu Yao - MBZUAI</title> -->
 </head>
 
 
 <body>
-  <div style="margin: 30px; max-width: 1100px;">
-    <img width="216" height="295" class="headshot" src="1359250181.jpg" alt="" />
-  <div class="about"><h1>Yu Yao</h1>
-    <br/>
-    <i>Postdoc Researcher</i><br/>
-    <!--         Mohamed bin Zayed University of Artificial Intelligence<br/> -->
-    Email: yyao0814 [at] uni.sydney.edu.au<br/>
-    <br/>
-    <a href="https://www.tmllab.ai/">Trustworthy Machine Learning Lab</a> <br/>
-    <a href="https://sydney.edu.au/">University of Sydney</a> <br/>
-    <a href="https://www.unsw.edu.au/">Computer Science and Engineering</a><br/>
-  <!--         <P>My name is Yu Yao. I am a Postdoc Researcher at MBZUAI. I have completed my Ph.D. under the supervision of Dr. Tongliang Liu from USYD. My research interests lie in causal inference and trustworthy machine learning.</P> -->
-    <P>My name is Yu Yao. I have completed my Ph.D. under the supervision of Dr. Tongliang Liu from USYD. My research interests lie in causal inference and trustworthy machine learning.</P>
-  </div> 
-  <br/>
+    <div style="margin: 30px; max-width: 1100px;">
+        <img width="216" height="295" class="headshot" src="1359250181.jpg" alt="" />
+        <div class="about">
+            <h1>Yu Yao</h1>
+            <br />
+            <i>Postdoc Researcher</i><br />
+            <!--         Mohamed bin Zayed University of Artificial Intelligence<br/> -->
+            Email: yyao0814 [at] uni.sydney.edu.au<br />
+            <br />
+            <a href="https://www.tmllab.ai/">Trustworthy Machine Learning Lab</a> <br />
+            <a href="https://sydney.edu.au/">University of Sydney</a> <br />
+            <a href="https://www.unsw.edu.au/">Computer Science and Engineering</a><br />
+            <!--         <P>My name is Yu Yao. I am a Postdoc Researcher at MBZUAI. I have completed my Ph.D. under the supervision of Dr. Tongliang Liu from USYD. My research interests lie in causal inference and trustworthy machine learning.</P> -->
+            <P>My name is Yu Yao. I have completed my Ph.D. under the supervision of Dr. Tongliang Liu from USYD. My
+                research interests lie in causal inference and trustworthy machine learning.</P>
+        </div>
+        <br />
 
-    <hr style="clear: both;">
-    <h2>Publications</h2>
+        <hr style="clear: both;">
+        <h2>Publications</h2>
 
-    <div id="gsc_a_tw">
+        <div id="gsc_a_tw">
+            <table id="gsc_a_t">
+                <tbody id="gsc_a_b">
+
+                    <tr class="gsc_a_tr">
+                        <td class="gsc_a_t"><a
+                                href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:MXK_kJrjxJIC"
+                                class="gsc_a_at">Which is Better for Learning with Noisy Labels: The Semi-supervised
+                                Method or Modeling Label Noise?</a>
+                            <div class="gs_gray">Y Yao, M Gong, Y Du, J Yu, B Han, K Zhang, T Liu</div>
+                            <div class="gs_gray">International Conference on Machine Learning</div>
+                        </td>
+                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2023</span></td>
+                    </tr>
+
+
+                    <!--               <tr class="gsc_a_tr">
+<td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:MXK_kJrjxJIC" class="gsc_a_at">Multi-scale Cooperative Multimodal Transformers for Multimodal Sentiment Analysis in Videos</a>
+<div class="gs_gray">L Ma, Y Yao, T Liang, T Liu</div>
+<div class="gs_gray">arXiv preprint arXiv:2206.07981</div>
+</td>
+<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2023</span></td>
+</tr> -->
+                    <tr class="gsc_a_tr">
+                        <td class="gsc_a_t"><a
+                                href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OkcaMKAAAAAJ&citation_for_view=OkcaMKAAAAAJ:YOwf2qJgpHMC"
+                                class="gsc_a_at"> ProtoSimi: Label Correction for Fine-Grained Visual Categorization</a>
+                            <div class="gs_gray">J Shen, Y Yao, S Huang, Z Wang, R Wang, J Yu, T Liu</div>
+                            <div class="gs_gray">Machine Learning</div>
+                        </td>
+                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2022</span></td>
+                    </tr>
+
+                    <tr class="gsc_a_tr">
+                        <td class="gsc_a_t"><a
+                                href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:roLk4NBRz8UC"
+                                class="gsc_a_at">Rethinking class-prior estimation for positive-unlabeled learning</a>
+                            <div class="gs_gray">Y Yao, T Liu, B Han, M Gong, G Niu, M Sugiyama, D Tao</div>
+                            <div class="gs_gray">International Conference on Learning Representations</div>
+                        </td>
+                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2022</span></td>
+                    </tr>
+
+                    <!--               <tr class="gsc_a_tr">
+<td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:0EnyYjriUFMC" class="gsc_a_at">Do We Need to Penalize Variance of Losses for Learning with Label Noise?</a>
+<div class="gs_gray">Y Lin, Y Yao, Y Du, J Yu, B Han, M Gong, T Liu</div>
+<div class="gs_gray">arXiv preprint arXiv:2201.12739</div>
+</td>
+<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2022</span></td>
+</tr> -->
+                    <tr class="gsc_a_tr">
+                        <td class="gsc_a_t"><a
+                                href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:YsMSGLbcyi4C"
+                                class="gsc_a_at">Understanding How Pretraining Regularizes Deep Learning Algorithms</a>
+                            <div class="gs_gray">Y Yao, B Yu, C Gong, T Liu</div>
+                            <div class="gs_gray">IEEE Transactions on Neural Networks and Learning Systems</div>
+                        </td>
+                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2021</span></td>
+                    </tr>
+
+                    <tr class="gsc_a_tr">
+                        <td class="gsc_a_t"><a
+                                href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:hqOjcs7Dif8C"
+                                class="gsc_a_at">Instance-dependent label-noise learning under a structural causal
+                                model</a>
+                            <div class="gs_gray">Y Yao, T Liu, M Gong, B Han, G Niu, K Zhang</div>
+                            <div class="gs_gray">Advances in Neural Information Processing Systems 34, 4409-4420</div>
+                        </td>
+                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2021</span></td>
+                    </tr>
+
+                    <!--               <tr class="gsc_a_tr">
+
+<td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:5nxA0vEk-isC" class="gsc_a_at">Can Label-Noise Transition Matrix Help to Improve Sample Selection and Label Correction?</a>
+<div class="gs_gray">Y Yao, X Li, T Liu, A Blair, M Gong, B Han, G Niu, M Sugiyama</div>
+<div class="gs_gray"></div>
+</td>
+<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2021</span></td>
+</tr> -->
+                    <tr class="gsc_a_tr">
+                        <td class="gsc_a_t"><a
+                                href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:Se3iqnhoufwC"
+                                class="gsc_a_at">Dual t: Reducing estimation error for transition matrix in label-noise
+                                learning</a>
+                            <div class="gs_gray">Y Yao, T Liu, B Han, M Gong, J Deng, G Niu, M Sugiyama</div>
+                            <div class="gs_gray">Advances in neural information processing systems 33, 7260-7271</div>
+                        </td>
+                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2020</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div id="gsc_a_sp"></div>
+        </div>
+        <br />
+
+        <h2>Education</h2>
         <table id="gsc_a_t">
-        <tbody id="gsc_a_b">
+            <tbody id="gsc_a_b">
 
-              
-        <tr class="gsc_a_tr">
-        <td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:MXK_kJrjxJIC" class="gsc_a_at">Which is Better for Learning with Noisy Labels: The Semi-supervised Method or Modeling Label Noise?</a>
-            <div class="gs_gray">Y Yao, M Gong, Y Du, J Yu, B Han, K Zhang, T Liu</div>
-            <div class="gs_gray">International Conference on Machine Learning</div>
-        </td>
-            <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2023</span></td>
-        </tr>
+                <tr class="gsc_a_tr">
+                    <td class="gsc_a_t">
+                        <div class="gsc_a_at">University of Sydney, School of Computer Science</div>
+                        <div class="gs_gray">Ph.D. Candidate in Machine Learning, 03/2019 - 12/2022</div>
+                        <div class="gs_gray">Supervisor: <a href="https://tongliang-liu.github.io/">Tongliang Liu</a>,
+                            <a
+                                href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html">Dacheng
+                                Tao</a><br>
+                        </div>
+                    </td>
+                </tr>
 
+                <tr class="gsc_a_tr">
+                    <td class="gsc_a_t">
+                        <div class="gsc_a_at">University of New South Wales, School of Computer Science and Engineering
+                        </div>
+                        <div class="gs_gray">B.Sc. (Hons) in Software Engineering, 07/2015-07/2018</div>
+                        <div class="gs_gray">Supervisor: <a
+                                href="https://www.linkedin.com/in/joshua-w-k-ho-a0489434/?originalSubdomain=hk">Joshua
+                                Ho</a> <br>
+                        </div>
 
-      <!--               <tr class="gsc_a_tr">
-      <td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:MXK_kJrjxJIC" class="gsc_a_at">Multi-scale Cooperative Multimodal Transformers for Multimodal Sentiment Analysis in Videos</a>
-      <div class="gs_gray">L Ma, Y Yao, T Liang, T Liu</div>
-      <div class="gs_gray">arXiv preprint arXiv:2206.07981</div>
-      </td>
-        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2023</span></td>
-      </tr> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
 
-      <tr class="gsc_a_tr">
-      <td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OkcaMKAAAAAJ&citation_for_view=OkcaMKAAAAAJ:YOwf2qJgpHMC" class="gsc_a_at"> ProtoSimi: Label Correction for Fine-Grained Visual Categorization</a>
-        <div class="gs_gray">J Shen, Y Yao, S Huang, Z Wang, R Wang, J Yu, T Liu</div>
-        <div class="gs_gray">Machine Learning</div>
-      </td>             
-        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2022</span></td>
-      </tr>
-
-        <tr class="gsc_a_tr">
-            <td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:roLk4NBRz8UC" class="gsc_a_at">Rethinking class-prior estimation for positive-unlabeled learning</a>
-                <div class="gs_gray">Y Yao, T Liu, B Han, M Gong, G Niu, M Sugiyama, D Tao</div>
-                <div class="gs_gray">International Conference on Learning Representations</div>
-            </td>        
-            <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2022</span></td>
-        </tr>
-
-      <!--               <tr class="gsc_a_tr">
-      <td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:0EnyYjriUFMC" class="gsc_a_at">Do We Need to Penalize Variance of Losses for Learning with Label Noise?</a>
-      <div class="gs_gray">Y Lin, Y Yao, Y Du, J Yu, B Han, M Gong, T Liu</div>
-      <div class="gs_gray">arXiv preprint arXiv:2201.12739</div>
-      </td>
-      <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2022</span></td>
-      </tr> -->
-
-      <tr class="gsc_a_tr">
-        <td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:YsMSGLbcyi4C" class="gsc_a_at">Understanding How Pretraining Regularizes Deep Learning Algorithms</a>
-            <div class="gs_gray">Y Yao, B Yu, C Gong, T Liu</div>
-            <div class="gs_gray">IEEE Transactions on Neural Networks and Learning Systems</div>
-        </td>
-        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2021</span></td>
-      </tr>
-
-      <tr class="gsc_a_tr">
-        <td class="gsc_a_t">
-            <td class="gsc_a_t"> <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:hqOjcs7Dif8C" class="gsc_a_at">Instance-dependent label-noise learning under a structural causal model</a>
-                <div class="gs_gray">Y Yao, T Liu, M Gong, B Han, G Niu, K Zhang</div>
-                <div class="gs_gray">Advances in Neural Information Processing Systems 34, 4409-4420<span class="gs_oph">, 2021</span></div>
-            </td>
-        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2021</span></td>
-      </tr>
-
-      <!--               <tr class="gsc_a_tr">
-
-      <td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:5nxA0vEk-isC" class="gsc_a_at">Can Label-Noise Transition Matrix Help to Improve Sample Selection and Label Correction?</a>
-      <div class="gs_gray">Y Yao, X Li, T Liu, A Blair, M Gong, B Han, G Niu, M Sugiyama</div>
-      <div class="gs_gray"></div>
-      </td>
-      <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2021</span></td>
-      </tr> -->
-
-      <tr class="gsc_a_tr">  
-        <td class="gsc_a_t"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:Se3iqnhoufwC" class="gsc_a_at">Dual t: Reducing estimation error for transition matrix in label-noise learning</a>
-            <div class="gs_gray">Y Yao, T Liu, B Han, M Gong, J Deng, G Niu, M Sugiyama</div>
-            <div class="gs_gray">Advances in neural information processing systems 33, 7260-7271</div>
-        </td>
-            <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2020</span></td>
-      </tr>
-
-      </tbody>
-      </table>
-      <div id="gsc_a_sp"></div>
-      </div>
-      <br/>
-
-      <h2>Education</h2>
-      <table id="gsc_a_t">
-      <tbody id="gsc_a_b">
-      <tr class="gsc_a_tr">
-      <td class="gsc_a_t">
-      <div   class="gsc_a_at">University of Sydney, School of Computer Science</div>
-      <div class="gs_gray">Ph.D. Candidate in Machine Learning, 03/2019 - 12/2022</div>
-      <div class="gs_gray">Supervisor: <a href="https://tongliang-liu.github.io/">Tongliang Liu</a>, <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html">Dacheng Tao</a><br>
-      </div>
-      </td>
-      </tr>
-      <tr class="gsc_a_tr">
-      <td class="gsc_a_t">
-      <div  class="gsc_a_at">University of New South Wales, School of Computer Science and Engineering</div>
-      <div class="gs_gray">B.Sc. (Hons) in Software Engineering, 07/2015-07/2018</div>
-      <div class="gs_gray">Supervisor: <a href="https://www.linkedin.com/in/joshua-w-k-ho-a0489434/?originalSubdomain=hk">Joshua Ho</a> <br>
-      </div>
-
-      </td>
-      </tr>
-      </tbody>
-      </table>
-      <br/>
-
-      <h2>Academic Service</h2>
-      <div  class="gsc_a_aw">
-      <p>Workflow Chair: IJCAI workshop 2021</p> 
-      <p>Conference Reviewer: NeurIPS, ICML, ICLR, AISTATS, UAI, CVPR, ICCV, ECCV, SIGKDD, AAAI, IJCAI, etc.</p> 
-      <p>Journal Reviewer: TMLR, MLJ, TKDE, TNN, etc.</p> 
-      </div>
-      <br/>
-      <!-- 
-        <hr style="clear: both;"> -->
+        <h2>Academic Service</h2>
+        <div class="gsc_a_aw">
+            <p>Workflow Chair: IJCAI workshop 2021</p>
+            <p>Conference Reviewer: NeurIPS, ICML, ICLR, AISTATS, UAI, CVPR, ICCV, ECCV, SIGKDD, AAAI, IJCAI, etc.</p>
+            <p>Journal Reviewer: TMLR, MLJ, TKDE, TNN, etc.</p>
+        </div>
+        <br />
+        <!-- 
+<hr style="clear: both;"> -->
         <h2>Awards</h2>
-        <div  class="gsc_a_aw">
-        <p>School of Computer Science Research Students Excellence Prize, 2019</p> 
-        <p>The commBank Year 4 Prize (the highest WAM in the honours year), 2019</p>
-        <p>The Displayr Thesis Prize (the best performance in Thesis), 2018</p>
-        <p>The CSE Undergraduate Performance Price (7th place), 2018</p>     
-      </div>
-        <br/>
+        <div class="gsc_a_aw">
+            <p>School of Computer Science Research Students Excellence Prize, 2019</p>
+            <p>The commBank Year 4 Prize (the highest WAM in the honours year), 2019</p>
+            <p>The Displayr Thesis Prize (the best performance in Thesis), 2018</p>
+            <p>The CSE Undergraduate Performance Price (7th place), 2018</p>
+        </div>
+        <br />
 
         <!-- <hr style="clear: both;"> -->
 
 
+        <hr />
+    </div>
 
 
+</body>
 
-      <hr />
-      </div>
-
-
-  </body>
 </html>
