@@ -5,6 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+
+/* @media (min-width: 1px) and (max-width: 767px) {
+.image {
+    margin: 0  auto;
+
+   }
+} */
+        .centered {
+        margin: 0  auto;
+        /* background-color: #f3f3f3; */
+        /* border-radius: 1px; */
+        max-width: 1000px;
+        padding: 10px 10px 10px 10px;
+        /* box-shadow: 2px 2px #dbd8d8; */
+        }
+
+
+
         body {
             font-size: 16px;
             font-family: Helvetica, arial, sans-serif;
@@ -45,12 +63,25 @@
             .headshot {
                 float: none;
                 display: block;
-                margin: 0 0 30px 0;
+                margin: 0 auto;
+                width: 100%;
+                /* height: auto; */
+                object-fit: contain;
             }
 
         }
 
+        @media (max-width: 700px) {
+            .image {
+                float: none;
+                display: block;
+                margin: 0 auto;
+                width: 95%;
+                height: auto;
+                text-align: center;
+            }
 
+        }
 
         a {
             background-image: linear-gradient(to right,
@@ -159,15 +190,23 @@
 
 
 <body>
-    <div style="margin: 30px; max-width: 1100px;">
-        <img width="216" height="295" class="headshot" src="1359250181.jpg" alt="" />
-        <div class="about">
+    <br/>
+    <br/>
+    <br/>
+    <div class="centered">
+        <div class="image" >
+            <img width="180" height="240" class="headshot" src="1359250181.jpg" alt="" />
+            <br />
+          
             <h1>Yu Yao</h1>
             <br />
             <i>Postdoc Research Fellow</i><br />
             <!-- Mohamed bin Zayed University of Artificial Intelligence<br/> -->
             Email: yaoyu5507203 [at] gmail.com<br />
+        </div>
             <br />
+          
+           
             <br />
             <!-- <br />
             <a href="https://mbzuai.ac.ae/">Mohamed bin Zayed University of Artificial Intelligence</a> <br /> -->
@@ -180,7 +219,7 @@
                 Tongliang Liu and Prof. Kun Zhang. I obtained my Ph.D. from the University of Sydney, where I was supervised by Prof. 
                 Tongliang Liu and co-supervised by Prof. Dacheng Tao. I received my bachelor's degree from the University of New South Wales. 
                 My research interests lie in causality and weakly supervised learning.</P>
-        </div>
+       
         <br />
 
         <hr style="clear: both;">
