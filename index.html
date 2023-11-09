@@ -11,407 +11,12 @@
     <meta name="msapplication-navbutton-color" content="#fff">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        /* @media (min-width: 1px) and (max-width: 767px) {
-.image {
-    margin: 0  auto;
-
-   }
-} */
-
-        .cat {
-            position: relative;
-            height: 30px;
-            width: 30px;
-        }
-
-        .ear {
-            position: absolute;
-            top: 5%;
-            height: 30%;
-            width: 25%;
-            background: #282828;
-        }
-
-        .ear::before,
-        .ear::after {
-            content: '';
-            position: absolute;
-            bottom: 24%;
-            height: 10%;
-            width: 5%;
-            border-radius: 50%;
-            background: #282828;
-        }
-
-        .ear::after {
-            transform-origin: 50% 100%;
-        }
-
-        .ear--left {
-            left: -4%;
-            border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
-            transform: rotate(-30deg);
-        }
-
-        .ear--left::before,
-        .ear--left::after {
-            right: 10%;
-        }
-
-        .ear--left::after {
-            transform: rotate(-45deg);
-        }
-
-        .ear--right {
-            right: -4%;
-            border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
-            transform: rotate(30deg);
-        }
-
-        .ear--right::before,
-        .ear--right::after {
-            left: 10%;
-        }
-
-        .ear--right::after {
-            transform: rotate(45deg);
-        }
-
-        .face {
-            position: absolute;
-            top: 5%;
-            height: 95%;
-            width: 100%;
-            background: #282828;
-            border-radius: 50%;
-        }
-
-        .eye {
-            position: absolute;
-            top: 35%;
-            height: 27%;
-            width: 29%;
-            background: #fff;
-            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-        }
-
-        .eye::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 0;
-            width: 100%;
-            border-radius: 0% 0% 50% 50% / 0% 0% 40% 40%;
-            background: #282828;
-            animation: blink 4s infinite ease-in;
-        }
-
-        @keyframes blink {
-            0% {
-                height: 0;
-            }
-
-            90% {
-                height: 0;
-            }
-
-            92.5% {
-                height: 100%;
-            }
-
-            95% {
-                height: 0;
-            }
-
-            97.5% {
-                height: 100%;
-            }
-
-            100% {
-                height: 0;
-            }
-        }
-
-        .eye::before {
-            content: '';
-            position: absolute;
-            top: 60%;
-            height: 10%;
-            width: 15%;
-            background: #fff;
-            border-radius: 50%;
-        }
-
-        .eye--left {
-            left: 0;
-        }
-
-        .eye--left::before {
-            right: -5%;
-        }
-
-        .eye--right {
-            right: 0;
-        }
-
-        .eye--right::before {
-            left: -5%;
-        }
-
-        .eye-pupil {
-            position: absolute;
-            top: 25%;
-            height: 50%;
-            width: 20%;
-            background: #282828;
-            border-radius: 50%;
-            animation: look-around 4s infinite;
-        }
-
-        @keyframes look-around {
-            0% {
-                transform: translate(0);
-            }
-
-            5% {
-                transform: translate(50%, -25%);
-            }
-
-            10% {
-                transform: translate(50%, -25%);
-            }
-
-            15% {
-                transform: translate(-100%, -25%);
-            }
-
-            20% {
-                transform: translate(-100%, -25%);
-            }
-
-            25% {
-                transform: translate(0, 0);
-            }
-
-            100% {
-                transform: translate(0, 0);
-            }
-        }
-
-        .eye--left .eye-pupil {
-            right: 30%;
-        }
-
-        .eye--right .eye-pupil {
-            left: 30%;
-        }
-
-        .eye-pupil::after {
-            content: '';
-            position: absolute;
-            top: 30%;
-            right: -5%;
-            height: 20%;
-            width: 35%;
-            border-radius: 50%;
-            background: #fff;
-        }
-
-        .muzzle {
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            height: 6%;
-            width: 10%;
-            background: #fff;
-            transform: translateX(-50%);
-            border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
-        }
-
-        .centered {
-            margin: 0 auto;
-            /* background-color: #f3f3f3; */
-            /* border-radius: 1px; */
-            max-width: 800px;
-            padding: 10px 10px 10px 10px;
-            /* box-shadow: 2px 2px #dbd8d8; */
-        }
-
-
-
-
-        .icons {
-            width: 120px;
-
-        }
-
-        @media (max-width: 600px) {
-            .icons {
-                width: 120px;
-                /* height: auto; */
-                margin: 0 auto;
-            }
-
-        }
-
-        body {
-            font-size: 18px;
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-        }
-
-        .small {
-            font-size: 12px;
-            /* 75% of the baseline */
-        }
-
-        .large {
-            font-size: 20px;
-            /* 125% of the baseline */
-        }
-
-        img {
-            max-width: 100%;
-            margin-bottom: 30px;
-        }
-
-        table {
-            width: 100%;
-        }
-
-        #subtitle,
-        #share,
-        #slider,
-        #sidebar {
-            display: none;
-        }
-
-        .headshot {
-            float: left;
-            margin-right: 30px;
-        }
-
-        @media (max-width: 600px) {
-            .headshot {
-                float: none;
-                display: block;
-                margin: 0 auto;
-                width: 100%;
-                /* height: auto; */
-                object-fit: contain;
-            }
-
-        }
-
-        @media (max-width: 600px) {
-            .image {
-                float: none;
-                display: block;
-                margin: 0 auto;
-                width: 95%;
-                height: auto;
-                text-align: center;
-            }
-
-        }
-
-        P {
-            font-size: 16px;
-        }
-
-        a {
-            background-image: linear-gradient(to right,
-                    #392cb3 50%,
-                    #392cb3 50%,
-                    rgb(0, 15, 83) 50%);
-            background-size: 200% 100%;
-            background-position: -100%;
-            display: inline-block;
-            padding: 3px 0;
-            position: relative;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all 0.3s ease-in-out;
-        }
-
-        a:before {
-            content: '';
-            background: #54b3d6;
-            display: block;
-            position: absolute;
-            bottom: 0px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        a:hover {
-            background-position: 0;
-        }
-
-        a:hover::before {
-            width: 100%;
-        }
-
-        .gsc_a_at {
-            padding: 8px 25px 2px 0px;
-            font-size: 16px;
-        }
-
-        .gsc_a_aw {
-            padding: 2px 25px 0px 0px;
-            font-size: 14px;
-        }
-
-        .blue-text {
-            color: blue;
-        }
-
-        body,
-        td,
-        input,
-        button {
-            font-size: 15px;
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-            line-height: 1.24;
-        }
-
-        .gs_gray {
-            padding: 2px 25px 0px 0px;
-            color: #636363;
-        }
-
-        table {
-            border-collapse: collapse;
-            border-width: 0;
-            empty-cells: show;
-        }
-
-        html,
-        body,
-        form,
-        table,
-        div,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        img,
-        ol,
-        ul,
-        li,
-        button {
-            margin: 0;
-            padding: 0;
-            border: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="publication.js"></script>  
+    <link href="https://cdn.jsdelivr.net/gh/huybery/huybery.github.io@aa15407/assets/font-awesome.min.css"
+    rel="stylesheet">
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -470,30 +75,13 @@
                 </tr>
             </table>
         </div>
-        <!--               
-           
-            &nbsp;&nbsp;
-            <a href="https://scholar.google.com/citations?user=OkcaMKAAAAAJ&hl=en" target="_blank"><img
-                    src="google_logo.png" height="30px"></a>&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/yu-yao-150377134/" target="_blank"><img src="linkedin_logo.png"
-                    height="30px"></a> -->
-
-        <!-- <br /> -->
-
-
-
-        <!-- <br />
-            <a href="https://mbzuai.ac.ae/">Mohamed bin Zayed University of Artificial Intelligence</a> <br /> -->
-
-        <!--         <P>My name is Yu Yao. I am a Postdoc Researcher at MBZUAI. I have completed my Ph.D. under the supervision of Dr. Tongliang Liu from USYD. My research interests lie in causal inference and trustworthy machine learning.</P> -->
-
-        <!-- <h2>Short Bios</h2> -->
+        <br />
         <P>
             I am a postdoctoral research fellow at Mohamed bin Zayed University of Artificial Intelligence and Carnegie
             Mellon University, collaborating with Prof.
             Tongliang Liu and Prof. Kun Zhang. I obtained my Ph.D. from the University of Sydney, where I was supervised
             by Prof.
-            Tongliang Liu and co-supervised by Prof. Dacheng Tao. 
+            Tongliang Liu and co-supervised by Prof. Dacheng Tao. I got my bachelor's degree at the University of New South Wales. 
             My research lie in causality and weakly supervised learning.</P>
 
         <br />
@@ -502,113 +90,20 @@
         <h2>Publications</h2>
 
         <div id="gsc_a_tw">
-            <table id="gsc_a_t">
-                <tbody id="gsc_a_b">
-
-
-                    <!-- <tr class="gsc_a_tr">
-                        <td class="gsc_a_t"><a
-                            class="gsc_a_at" target="_blank">CS-Isolate: Extracting Hard Confident Examples by Content and Style Isolation</a>
-                            <div class="gs_gray">Y Lin, Y Yao, X Shi, M Gong, X Shen, D Xu, T Liu</div>
-                            <div class="gs_gray">Advances in Neural Information Processing Systems</div>
-                        </td>
-                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2023</span></td>
-                    </tr> -->
-
-
-
-
-                    <tr class="gsc_a_tr">
-                        <td class="gsc_a_t"><a
-                                href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:MXK_kJrjxJIC"
-                                class="gsc_a_at" target="_blank">Which is Better for Learning with Noisy Labels: The Semi-supervised Method or Modeling Label Noise?</a>
-                            <div class="gs_gray">Y Yao, M Gong, Y Du, J Yu, B Han, K Zhang, T Liu</div>
-                            <div class="gs_gray">International Conference on Machine Learning</div>
-                        </td>
-                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2023</span></td>
-                    </tr>
-
-
-                    
-                    <tr class="gsc_a_tr">
-                        <td class="gsc_a_t"><a
-                                href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OkcaMKAAAAAJ&citation_for_view=OkcaMKAAAAAJ:KlAtU1dfN6UC"
-                                class="gsc_a_at" target="_blank">StarmapVis: An Interactive and Narrative Visualisation Tool for Single-Cell and Spatial Data</a>
-                            <div class="gs_gray">S Ma, X Fang, Y Yao, J Li, DC Morgan, Y Xia, CSM Kwok, MCK Lo, DMD Siu,
-                                KK Tsia, A Yang, JWK Ho</div>
-                            <div class="gs_gray">Computational and Structural Biotechnology Journal</div>
-                        </td>
-                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2023</span></td>
-                    </tr>
-
-
-                    <tr class="gsc_a_tr">
-                        <td class="gsc_a_t"><a
-                                href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OkcaMKAAAAAJ&citation_for_view=OkcaMKAAAAAJ:YOwf2qJgpHMC"
-                                class="gsc_a_at" target="_blank">ProtoSimi: Label Correction for Fine-Grained Visual Categorization</a>
-                            <div class="gs_gray">J Shen, Y Yao, S Huang, Z Wang, R Wang, J Yu, T Liu</div>
-                            <div class="gs_gray">Machine Learning</div>
-                        </td>
-                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2023</span></td>
-                    </tr>
-
-                    <tr class="gsc_a_tr">
-                        <td class="gsc_a_t"><a
-                                href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:roLk4NBRz8UC"
-                                class="gsc_a_at" target="_blank">Rethinking Class-Prior Estimation for Positive-Unlabeled Learning</a>
-                            <div class="gs_gray">Y Yao, T Liu, B Han, M Gong, G Niu, M Sugiyama, D Tao</div>
-                            <div class="gs_gray">International Conference on Learning Representations</div>
-                        </td>
-                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2022</span></td>
-                    </tr>
-
-
-                    <tr class="gsc_a_tr">
-                        <td class="gsc_a_t"><a
-                                href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:YsMSGLbcyi4C"
-                                class="gsc_a_at" target="_blank">Understanding How Pretraining Regularizes Deep Learning Algorithms</a>
-                            <div class="gs_gray">Y Yao, B Yu, C Gong, T Liu</div>
-                            <div class="gs_gray">IEEE Transactions on Neural Networks and Learning Systems</div>
-                        </td>
-                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2021</span></td>
-                    </tr>
-
-                    <tr class="gsc_a_tr">
-                        <td class="gsc_a_t"><a
-                                href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:hqOjcs7Dif8C"
-                                class="gsc_a_at" target="_blank">Instance-Dependent Label-Noise Learning under a Structural Causal Model</a>
-                            <div class="gs_gray">Y Yao, T Liu, M Gong, B Han, G Niu, K Zhang</div>
-                            <div class="gs_gray">Advances in Neural Information Processing Systems</div>
-                        </td>
-                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2021</span></td>
-                    </tr>
-
-
-                    <tr class="gsc_a_tr">
-                        <td class="gsc_a_t"><a
-                                href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OkcaMKAAAAAJ&amp;sortby=pubdate&amp;citation_for_view=OkcaMKAAAAAJ:Se3iqnhoufwC"
-                                class="gsc_a_at" target="_blank">Dual T: Reducing Estimation Error for Transition Matrix in Label-Noise Learning</a>
-                            <div class="gs_gray">Y Yao, T Liu, B Han, M Gong, J Deng, G Niu, M Sugiyama</div>
-                            <div class="gs_gray">Advances in neural information processing systems</div>
-                        </td>
-                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2020</span></td>
-                    </tr>
-
-                </tbody>
-            </table>
-            <div id="gsc_a_sp"></div>
+    
         </div>
-        <br />
+       
 
         <hr style="clear: both;">
-        <h2>Academic Service</h2>
-        <div class="gsc_a_aw">
-            <p>Area Chair: AJCAI 2023</p>
-            <p>Workflow Chair: IJCAI workshop 2021</p>
-            <p>Conference Reviewer: NeurIPS, ICML, ICLR, AISTATS, UAI, CVPR, ICCV, ECCV, SIGKDD, AAAI, IJCAI, etc.</p>
-            <p>Journal Reviewer: TMLR, MLJ, TKDE, TNN, etc.</p>
-        </div>
+        <h2>Professional Activities</h2>
         <br />
+        <div class="gsc_a_aw">
+            <p><b>Area Chair</b>: AJCAI 2023</p>
+            <p><b>Workflow Chair</b>: IJCAI workshop 2021</p>
+            <p><b>Conference Reviewer</b>: NeurIPS, ICML, ICLR, AISTATS, UAI, CVPR, ICCV, ECCV, SIGKDD, AAAI, IJCAI, etc.</p>
+            <p><b>Journal Reviewer</b>: TMLR, MLJ, TKDE, TNN, etc.</p>
+        </div>
+        
 
 
 
@@ -621,7 +116,7 @@
                         <div class="gsc_a_at"><a href="https://www.linkedin.com/in/roger-zheng-3076b1171/" target="_blank">Jiyang Zheng</a>
                         </div>
                         <div class="gs_gray">The University of Sydney</div>
-                        <div class="gs_gray">Ph.D. Candidate in Computer Science, 03/2022-Present</div>
+                        <div class="student" ><b>Ph.D. Candidate</b> in Computer Science, 03/2022-Present</div>
                     </td>
                 </tr>
 
@@ -630,7 +125,7 @@
                         <div class="gsc_a_at"><a href="https://yexionglin.github.io/" target="_blank">Yexiong Lin</a>
                         </div>
                         <div class="gs_gray">The University of Sydney</div>
-                        <div class="gs_gray">Ph.D. Candidate in Computer Science, 03/2022-Present</div>
+                        <div class="student" ><b>Ph.D. Candidate</b> in Computer Science, 03/2022-Present</div>
                     </td>
                 </tr>
 
@@ -639,7 +134,7 @@
                         <div class="gsc_a_at"><a href="https://www.linkedin.com/in/yang-zhou-1b4b8524b/"
                                 target="_blank">Yang Zhou</a></div>
                         <div class="gs_gray">The University of Sydney</div>
-                        <div class="gs_gray">Honors Student in Computer Science (University Medal), 03/2022-06/2023</div>
+                        <div class="student" ><b>Honors Student</b> in Computer Science <b>(University Medal)</b>, 03/2022-06/2023</div>
                     </td>
                 </tr>
 
@@ -650,19 +145,18 @@
                                 href="https://www.linkedin.com/in/james-wood-4060/?originalSubdomain=au"
                                 target="_blank">James Wood</a></div>
                         <div class="gs_gray">The University of Sydney</div>
-                        <div class="gs_gray">Honors Student in Computer Science (University Medal), 06/2020-06/2021
+                        <div class="student" ><b>Honors Student</b> in Computer Science <b>(University Medal)</b>, 06/2020-06/2021
                         </div>
                     </td>
                 </tr>
-
             </tbody>
         </table>
 
-        <br />
-        <hr style="clear: both;">
+
+        <!-- <hr style="clear: both;"> -->
 
 
-        <h2>Education</h2>
+        <!-- <h2>Education</h2>
         <table id="gsc_a_t">
             <tbody id="gsc_a_b">
 
@@ -670,7 +164,7 @@
                     <td class="gsc_a_t">
                         <div class="gsc_a_at">University of Sydney, School of Computer Science</div>
                         <div class="gs_gray">Ph.D. Candidate in Machine Learning, 03/2019 - 12/2022</div>
-                        <div class="gs_gray">Supervisor: <a href="https://tongliang-liu.github.io/"
+                        <div class="supervisor">Supervisor: <a href="https://tongliang-liu.github.io/"
                                 target="_blank">Tongliang Liu</a>,
                             <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html"
                                 target="_blank">Dacheng
@@ -684,7 +178,7 @@
                         <div class="gsc_a_at">University of New South Wales, School of Computer Science and Engineering
                         </div>
                         <div class="gs_gray">B.Sc. (Hons) in Software Engineering, 07/2015-07/2018</div>
-                        <div class="gs_gray">Supervisor: <a
+                        <div class="supervisor">Supervisor: <a
                                 href="https://www.linkedin.com/in/joshua-w-k-ho-a0489434/?originalSubdomain=hk"
                                 target="_blank">Joshua
                                 Ho</a> <br>
@@ -693,11 +187,12 @@
                     </td>
                 </tr>
             </tbody>
-        </table>
+        </table> -->
 
-        <br />
+   
         <hr style="clear: both;">
-        <h2>Awards</h2>
+        <h2>Honors and Awards</h2>
+        <br />
         <div class="gsc_a_aw">
             <p>Outstanding Reviewer of ICLR, 2023</p>
             <p>School of Computer Science Research Students Excellence Prize, 2019</p>
@@ -706,32 +201,49 @@
             <p>The CSE Undergraduate Performance Price (7th place), 2018</p>
         </div>
 
-        <br />
+    
 
         <hr style="clear: both;">
 
-        <h2>Invited Talks</h2>
-
-        <div id="gsc_a_tw">
+        <h2>Teaching & Talk Experience</h2>
+        <br />
+        <div id="gsc_a_it">
             <table id="gsc_a_t">
                 <tbody id="gsc_a_b">
 
                     <tr class="gsc_a_tr">
                         <td class="gsc_a_t">
-                            <div class="gsc_a_at">Academic Talk: Recent Advances in Label-Noise Learning</div>
-                            <div class="gs_gray">China University of Petroleum</div>
+                            <div class="gsc_a_at"><b>Teaching Assistant</b>: Foundations and Advanced Topics in Machine Learning (for Ph.D.)</div>
+                            <div class="talk">Mohamed bin Zayed University of Artificial Intelligence</div>
                         </td>
-                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2022</span></td>
+                        <td class="gsc_a_y" style="text-align:right;">2023</td>
                     </tr>
 
                     <tr class="gsc_a_tr">
                         <td class="gsc_a_t">
-                            <div class="gsc_a_at">Invited Talk: Reducing Estimation Rrror for Transition Matrix in
+                            <div class="gsc_a_at"><b>Guest Lecturer</b>: Recent Advances in Label-Noise Learning</div>
+                            <div class="talk">China University of Petroleum</div>
+                        </td>
+                        <td class="gsc_a_y" style="text-align:right;">2022</td>
+                    </tr>
+
+
+                    <tr class="gsc_a_tr">
+                        <td class="gsc_a_t">
+                            <div class="gsc_a_at"><b>Teaching Assistant</b>: Advanced Machine Learning (for Master)</div>
+                            <div class="talk">The University of Sydney</div>
+                        </td>
+                        <td class="gsc_a_y"style="text-align:right;">2019-2022</td>
+                    </tr>
+
+                    <tr class="gsc_a_tr">
+                        <td class="gsc_a_t">
+                            <div class="gsc_a_at"><b>Invited Talk</b>: Reducing Estimation Rrror for Transition Matrix in
                                 Label-Noise Learning</div>
-                            <div class="gs_gray">Weakly-supervised Learning Workshop, Asian Conference on Machine
+                            <div class="talk">Weakly-supervised Learning Workshop, Asian Conference on Machine
                                 Learning</div>
                         </td>
-                        <td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2020</span></td>
+                        <td class="gsc_a_y"style="text-align:right;">2020</td>
                     </tr>
 
 
@@ -740,8 +252,8 @@
             </table>
             <!-- <div id="gsc_a_sp"></div> -->
         </div>
-        <br />
-        <!-- <hr style="clear: both;"> -->
+        
+        <hr style="clear: both;">
 
     </div>
 
