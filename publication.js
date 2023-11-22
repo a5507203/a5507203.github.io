@@ -5,7 +5,6 @@ function initPubTable(containerId) {
     table.id = containerId;
   
     const tbody = document.createElement('tbody');
-    tbody.id  = "gsc_a_b";
     table.appendChild(tbody);
 
     window.onload = function() {
@@ -18,11 +17,9 @@ function initPubTable(containerId) {
   
   function addPublication(table, link, title, authors, publisher, year, code, project) {
     const row = document.createElement('tr');
-    row.className = "gsc_a_tr"
     table.tBodies[0].appendChild(row);
   
     const cell = document.createElement('td');
-    cell.className  = "cell"
     row.appendChild(cell);
   
     const a = document.createElement('a');
