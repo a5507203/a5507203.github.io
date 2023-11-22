@@ -9,7 +9,7 @@ function initPubTable(containerId) {
     table.appendChild(tbody);
 
     window.onload = function() {
-      document.getElementById('gsc_a_tw').appendChild(table);
+      document.getElementById('pubWrapper').appendChild(table);
 
     };
 
@@ -22,14 +22,14 @@ function initPubTable(containerId) {
     table.tBodies[0].appendChild(row);
   
     const cell = document.createElement('td');
-    cell.className  = "gsc_a_t"
+    cell.className  = "cell"
     row.appendChild(cell);
   
     const a = document.createElement('a');
     a.href = link;
     a.target = '_blank';
     a.textContent = title;
-    a.className = "gsc_a_at";
+    a.className = "hyperlink";
     
     const authorsDiv = document.createElement('div');
     authors = authors.replace("Y Yao", '<span class="thisauthor" style="color: rgb(17, 17, 17); font-weight: 700; text-decoration: none; font-style: normal;">Y Yao</span>');
@@ -60,7 +60,7 @@ function initPubTable(containerId) {
 
   }
 
-const table = initPubTable('gsc_a_t');
+const table = initPubTable('Pub');
 
 addPublication(table,
   "https://nips.cc/virtual/2023/poster/71944",                    
