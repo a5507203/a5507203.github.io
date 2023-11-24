@@ -1,4 +1,3 @@
-// Data for the table rows
 const teachingData = [
     {
         role: "Teaching Assistant",
@@ -57,17 +56,13 @@ function createTeachingTable(data) {
     // Append tbody to the table
     table.appendChild(tbody);
 
-    document.addEventListener("DOMContentLoaded", function(e) {
+    document.addEventListener("DOMContentLoaded", function (e) {
         document.getElementById('teaching').appendChild(table);
-      });
+    });
     // Append the table to the document, for example, to a div with id 'tableContainer'
 }
 
 // Call the function to create and append the table
 createTeachingTable(teachingData);
 
-// window.onload = function() {
-//     createTable(tableData);
-//     console.log("sdf");
 
-//   };
