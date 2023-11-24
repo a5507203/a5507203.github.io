@@ -7,10 +7,11 @@ function initPubTable(containerId) {
     const tbody = document.createElement('tbody');
     table.appendChild(tbody);
 
-    window.onload = function() {
-      document.getElementById('pubWrapper').appendChild(table);
 
-    };
+    document.addEventListener("DOMContentLoaded", function(e) {
+      document.getElementById('pubWrapper').appendChild(table);
+    });
+    
 
     return table;
   }
@@ -49,7 +50,7 @@ function initPubTable(containerId) {
     cell.appendChild(pubDiv);
 
     const yearDiv = document.createElement('td');
-    yearDiv.className  = "gsc_a_y";
+    yearDiv.className  = "table_year";
     yearDiv.innerHTML = year;
     row.appendChild(yearDiv);
 

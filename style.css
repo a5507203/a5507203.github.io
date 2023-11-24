@@ -206,9 +206,11 @@ margin: 0  auto;
     background: #fff;
 }
 
-.gsc_a_y {
+.table_year {
     vertical-align: top;
     padding-bottom:  1rem!important;
+    width: 100px;
+    text-align:right;
 }
 
 .muzzle {
