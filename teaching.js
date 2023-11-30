@@ -1,4 +1,11 @@
 const teachingData = [
+
+    {
+        role: "Guest Lecturer",
+        description: "Techniques and Assumptions in Sample-Selection-Based Methods for Learning with Noisy Labels",
+        institution: "Mohamed bin Zayed University of Artificial Intelligence",
+        year: "2023"
+    },
     {
         role: "Teaching Assistant",
         description: "Foundations and Advanced Topics in Machine Learning (for Ph.D.)",
