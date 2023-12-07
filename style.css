@@ -237,15 +237,17 @@ margin: 0  auto;
 
 
 .icons {
-    width: 120px;
+    width: 220px;
+    height: auto;
+
 
 }
 
 @media (max-width: 600px) {
     .icons {
-        width: 120px;
-        /* height: auto; */
-        margin: 0 auto;
+        width: 220px;
+        height: auto;
+        margin: 20px auto 0px auto;
     }
 
 }
@@ -274,7 +276,7 @@ table {
 }
 
 h1 {
-    font-size: 18pt;
+    font-size: 23pt;
     font-weight: 600;
 }
 #subtitle,
