@@ -126,7 +126,7 @@ function addPublication(table, link, title, authors, publisher, year, code, proj
 
     if (project != null) {
 
-      publisher = publisher + ' | ' + ' <a href=' + project + ' target="_blank">Project page</a>';
+      publisher = publisher + ' | ' + ' <a href=' + project + ' target="_blank">Project</a>';
     }
     publisher = publisher + " ]";
   }
