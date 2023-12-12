@@ -121,14 +121,15 @@ function addPublication(table, link, title, authors, publisher, year, code, proj
 
   const pubDiv = document.createElement('div');
   pubDiv.className = "publisher";
+
   if (code != null) {
-    publisher = publisher + " [" + ' <a href=' + code + ' target="_blank">Code</a>';
+    publisher = publisher + '<span class=extralink> [<a href=' + code + ' target="_blank">Code</a>]';
 
     if (project != null) {
 
-      publisher = publisher + ' | ' + ' <a href=' + project + ' target="_blank">Project</a>';
+      publisher = publisher + ' [<a href=' + project + ' target="_blank">Project</a>]';
     }
-    publisher = publisher + " ]";
+    publisher = publisher + "</span>";
   }
   pubDiv.innerHTML = publisher;
   cell.appendChild(a);

@@ -323,7 +323,7 @@ P {
 
 
 a {
-    font-size: 12pt;
+    /* font-size: 12pt; */
     font-weight: 400;
     background-size: 200% 100%;
     background-position: -100%;
@@ -369,7 +369,9 @@ a:active {
     padding-bottom: 1rem !important;
 }
 
-
+.extralink{
+    font-size: 10pt!important;
+}
 .left_rows {
     padding: 0px 0px 0px 0px;
     /* font-size: 14px; */
