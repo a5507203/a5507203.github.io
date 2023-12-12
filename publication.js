@@ -5,6 +5,7 @@ const publicationData = [
     authors: "Y Lin, Y Yao, X Shi, M Gong, X Shen, D Xu, T Liu",
     publisher: "NeurIPS",
     year: "2023",
+    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:uXLvxth83S4J:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcxyU:AFWwaeYAAAAAZXga3yVLuVf__VMaQOBf7SIPpwg&scisig=AFWwaeYAAAAAZXga3-qL_ebn_OMTmdbmn7GxZB4&scisf=4&ct=citation&cd=-1&hl=en",
     code: "https://github.com/tmllab/2023_NeurIPS_CS-isolate",
     project: null
   },
@@ -14,6 +15,7 @@ const publicationData = [
     authors: "Y Yao, M Gong, Y Du, J Yu, B Han, K Zhang, T Liu",
     publisher: "ICML",
     year: "2023",
+    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:j7WJKVMdN90J:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMc0dI:AFWwaeYAAAAAZXgaydKTZgri0joh94WBfSzDlvE&scisig=AFWwaeYAAAAAZXgaySlJ-Kzu4wD8onv94hBZ-p8&scisf=4&ct=citation&cd=-1&hl=en",
     code: "https://github.com/tmllab/2023_ICML_Which-is-Better-for-Learning-with-Noisy-Labels",
     project: null
   },
@@ -23,6 +25,7 @@ const publicationData = [
     authors: "S Ma, X Fang, Y Yao, J Li, DC Morgan, Y Xia, CSM Kwok, MCK Lo, DMD Siu, KK Tsia, A Yang, JWK Ho",
     publisher: "Computational and Structural Biotechnology Journal",
     year: "2023",
+    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:WiUW5U11JbwJ:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcqOA:AFWwaeYAAAAAZXgasOAsqm95pYzIgtCggsWrsYk&scisig=AFWwaeYAAAAAZXgasHVrbuGkJ0a_reeQxNskiK8&scisf=4&ct=citation&cd=-1&hl=en",
     code: "https://github.com/holab-hku/starmapVis",
     project: "https://holab-hku.github.io/starmapVis"
   },
@@ -32,6 +35,7 @@ const publicationData = [
     authors: "J Shen, Y Yao, S Huang, Z Wang, R Wang, J Yu, T Liu",
     publisher: "Machine Learning",
     year: "2023",
+    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:Y6-_SM2--OYJ:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcjdM:AFWwaeYAAAAAZXgaldO1H07DFOJCdzUw_SQSVGM&scisig=AFWwaeYAAAAAZXgalXkvXSp_mSrzJDN-lGpqVyI&scisf=4&ct=citation&cd=-1&hl=en",
     code: null,
     project: null
   },
@@ -41,6 +45,7 @@ const publicationData = [
     authors: "Y Yao, T Liu, B Han, M Gong, G Niu, M Sugiyama, D Tao",
     publisher: "ICLR",
     year: "2022",
+    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:sPLcddlg5zQJ:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcZ0I:AFWwaeYAAAAAZXgaf0InOZJUY1wTHK0kSxZ6xPc&scisig=AFWwaeYAAAAAZXgaf_XHSCs7ODttOe0SdhqkuwM&scisf=4&ct=citation&cd=-1&hl=en",
     code: "https://github.com/tmllab/2022_ICLR_Rethinking-Class-Prior-Estimation-for-Positive-Unlabeled-Learning",
     project: null
   },
@@ -50,6 +55,7 @@ const publicationData = [
     authors: "Y Yao, B Yu, C Gong, T Liu",
     publisher: "TNNLS",
     year: "2021",
+    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:xP_hjpUIeu4J:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcIvw:AFWwaeYAAAAAZXgaOvxDYfAI2B7SxZzciOu0QF8&scisig=AFWwaeYAAAAAZXgaOvh0z_q3shbk0iuEKbX-P0s&scisf=4&ct=citation&cd=-1&hl=en",
     code: null,
     project: null
   },
@@ -59,6 +65,7 @@ const publicationData = [
     authors: "Y Yao, T Liu, M Gong, B Han, G Niu, K Zhang",
     publisher: "NeurIPS",
     year: "2021",
+    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:MdA-d1ryuPEJ:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcOrE:AFWwaeYAAAAAZXgaIrGtqXQbeh9g-Kh_yrbzu2k&scisig=AFWwaeYAAAAAZXgaInmOQp99bp-IpQIOH4pm1MI&scisf=4&ct=citation&cd=-1&hl=en",
     code: "https://github.com/tmllab/2021_NeurIPS_Instance-dependent-Label-noise-Learning-under-a-Structural-Causal-Model",
     project: null
   },
@@ -68,6 +75,7 @@ const publicationData = [
     authors: "Y Yao, T Liu, B Han, M Gong, J Deng, G Niu, M Sugiyama",
     publisher: "NeurIPS",
     year: "2020",
+    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:KQqfFfmllpQJ:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMflR4:AFWwaeYAAAAAZXgZjR5Z8LuhQMMIRWaySgc2jy0&scisig=AFWwaeYAAAAAZXgZjcsP20srLTFP9MlsOpUPBgw&scisf=4&ct=citation&cd=-1&hl=en",
     code: "https://github.com/tmllab/2020_NeurIPS_dual-t-reducing-estimation-error-for-transition-matrix-in-label-noise-learning",
     project: null
   }
@@ -88,6 +96,7 @@ function createPubTable() {
       item.authors,
       item.publisher,
       item.year,
+      item.bib,
       item.code,
       item.project
     );
@@ -101,7 +110,7 @@ function createPubTable() {
   return table;
 }
 
-function addPublication(table, link, title, authors, publisher, year, code, project) {
+function addPublication(table, link, title, authors, publisher, year, bib, code, project) {
   const row = document.createElement('tr');
   table.tBodies[0].appendChild(row);
 
@@ -121,16 +130,18 @@ function addPublication(table, link, title, authors, publisher, year, code, proj
 
   const pubDiv = document.createElement('div');
   pubDiv.className = "publisher";
-
+  publisher = publisher + '<span class=extralink> [<a href=' + bib + ' target="_blank">bib</a>]';
   if (code != null) {
-    publisher = publisher + '<span class=extralink> [<a href=' + code + ' target="_blank">Code</a>]';
+    publisher = publisher + ' [<a href=' + code + ' target="_blank">Code</a>]';
 
     if (project != null) {
 
       publisher = publisher + ' [<a href=' + project + ' target="_blank">Project</a>]';
     }
-    publisher = publisher + "</span>";
+
   }
+  publisher = publisher + "</span>";
+
   pubDiv.innerHTML = publisher;
   cell.appendChild(a);
   cell.appendChild(authorsDiv);
