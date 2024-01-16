@@ -1,7 +1,8 @@
 // Define your news items
 // Define your news items
 const newsItems = [
-    { date: '[01-2024]', text: "Two papers are accepted by ICLR'24. Congrats Ziming Hong and Jiyang Zheng!" },
+    { date: '[01-2024]', text: "One papers is accepted by ICLR'24 (Spotlight). Congrats Ziming Hong!" },
+    { date: '[01-2024]', text: "One papers is accepted by ICLR'24. Congrats Jiyang Zheng!" },
     { date: '[12-2023]', text: "I joined the University of Sydney as a Lecturer." },
     { date: '[09-2023]', text: "One paper is accepted by NeurIPS'23." },
     { date: '[09-2023]', text: "Yang Zhou got the University Medal! Congrats Yang!" },
@@ -18,7 +19,7 @@ const newsItems = [
   // Function to create a list item DOM element
   function createNewsItemElement(newsItem) {
     const li = document.createElement('li');
-    li.innerHTML = `${newsItem.date}, ${newsItem.text}`;
+    li.innerHTML = `${newsItem.date} ${newsItem.text}`;
     if (newsItem.congrats) {
       const span = document.createElement('span');
       span.className = 'congrats';
