@@ -13,6 +13,7 @@ function createList(entries) {
 
 
     let list = document.createElement('ul');
+    list.className = 'news_list';
     entries.forEach(entry => {
         let item = document.createElement('li');
         if (typeof entry === 'object') {

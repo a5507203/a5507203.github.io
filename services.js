@@ -79,6 +79,7 @@ function createListWithHeading(heading, entries) {
     section.appendChild(headingElement);
 
     let list = document.createElement('ul');
+    list.className = 'news_list';
     entries.forEach(entry => {
         let item = document.createElement('li');
         if (typeof entry === 'object') {
