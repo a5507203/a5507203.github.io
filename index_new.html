@@ -16,9 +16,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="selfie.js"></script>
+    <script type="text/javascript" src="news.js"></script>
     <script type="text/javascript" src="publication.js"></script>
     <script type="text/javascript" src="teaching.js"></script>
     <script type="text/javascript" src="supervise.js"></script>
+    <script type="text/javascript" src="services.js"></script>
+    <script type="text/javascript" src="awards.js"></script>
     <link href="https://cdn.jsdelivr.net/gh/huybery/huybery.github.io@aa15407/assets/font-awesome.min.css"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style2.css">
@@ -31,15 +34,14 @@
 
 
     <div id="menuBar" class="sidebar">
-        <div><button onclick="changeMenu(0)"><i class="fa fa-home" style="font-size: 22px;"></i> Home</button></div>
-        <div><button onclick="changeMenu(1)"><i class="fa fa-users" style="font-size: 18px;"></i> Group</button></div>
-        <div><button onclick="changeMenu(2)"><i class="fa fa-book" style="font-size: 19px;"></i> Publications</button>
+        <div><button onclick="changeMenu(2)"><i class="fa fa-home" style="font-size: 22px;"></i> Home</button></div>
+        <div><button onclick="changeMenu(3)"><i class="fa fa-book" style="font-size: 19px;"></i> Publications</button>
         </div>
-        <div><button onclick="changeMenu(3)"><i class="fa fa-briefcase" style="font-size: 17px;"></i> Service</button>
+        <div><button onclick="changeMenu(4)"><i class="fa fa-briefcase" style="font-size: 17px;"></i> Service</button>
         </div>
-        <div><button onclick="changeMenu(4)"><i class="fa fa-chalkboard-teacher" style="font-size: 15px;"></i> Teaching
+        <div><button onclick="changeMenu(5)"><i class="fa fa-chalkboard-teacher" style="font-size: 15px;"></i> Teaching
                 & Talks</button></div>
-        <div><button onclick="changeMenu(5)"><i class="fa fa-award" style="font-size: 20px;"></i> Awards</button></div>
+        <div><button onclick="changeMenu(6)"><i class="fa fa-award" style="font-size: 20px;"></i> Awards</button></div>
 
         <!-- Add more links as needed -->
     </div>
@@ -51,7 +53,7 @@
     <br />
     <div class="centered2">
         <div class="image">
-            <img width="205" height="280" class="headshot" id="selfie" data="1359250181trans.png" alt="" />
+            <img width="140" height="195" class="headshot" id="selfie" data="1359250181trans.png" alt="" />
             <table class="icons">
                 <tr>
                     <th>
@@ -90,16 +92,55 @@
         <i> Email: yu.yao@sydney.edu.au</i><br />
         <br />
         <P>
-            I am a lecturer in Machine learning at the School of Computer Science, the University of Sydney (USYD).
-            Before joining USYD, I was a postdoc at Mohamed bin Zayed University of Artificial Intelligence and Carnegie
-            Mellon University, collaborating with Prof.
-            Tongliang Liu and Prof. Kun Zhang. I obtained my Ph.D. from the University of Sydney, where I was supervised
-            by Prof.
-            Tongliang Liu and co-supervised by Prof. Dacheng Tao. I got my bachelor's degree at the University of New
-            South Wales.
-            My research lie in causality and weakly supervised learning.</P>
+
+            I completed my doctoral studies at the University of Sydney, where I studied under Professor Tongliang Liu
+            and my supervisor was Professor Dacheng Tao. I worked as a postdoctoral fellow at Mohamed bin Zayed University of Artificial Intelligence 
+            and Carnegie Mellon University, collaborating with Professor
+            Tongliang Liu and Professor Kun Zhang.
+
+        </P>
+      
 
 
+        <div id="goal">
+            <hr style="clear: both;">
+            My goal is to make the machine learning systems to be reliable and aligned with human values. This includes
+            the following directions:
+
+            <ul>
+                <li>
+                    Robustness:
+                    How can we build ML models that are robust to different types of distribution shift such as label noise and adversarial attacks in different data modalities? 
+                    How can we improve ML models' adaptability to changing environments?
+                    How can we design the evaluation methods to existing ML models in real-world settings?
+
+                </li>
+                <li>
+                   Interpretable Representation: How can we explain the representation learned by different ML methods?
+                    What would be the necessary assumptions for developing disentangled representations under different cases?
+                    How can we use multimodal data together to encourge the disentanglement?
+                    What empirical methods are needed to effectively achieve such disentanglement?
+                </li>
+
+                <li>
+                    Multi-Agent Systems: How can we optimize collaborative workflows in multi-agent systems
+                    to improve problem-solving capabilities with minimal human supervision? What strategies can be
+                    developed to refine agent interaction protocols, reduce context-window dependencies, and create adaptive
+                    workflows that
+                    mirror the efficiency and nuances of human collaboration?
+                </li> 
+            </ul>
+            I believe that targeting these challenges by combining rigorous theoretical frameworks with empirical
+            insights will not only provide us with a more clear understanding of ML, but will also be necessary
+            for ML to truly benefit society.
+        </div>
+
+
+        <div id="news">
+            <hr style="clear: both;">
+            <h2>Top News</h2>
+
+        </div>
 
         <div id="pubWrapper">
             <hr style="clear: both;">
@@ -108,44 +149,31 @@
 
 
 
-        <div class="activities" id="activities">
-            <hr style="clear: both;">
-            <h2>Services</h2>
-            <p><b>Area Chair</b>: AJCAI 2023</p>
-            <p><b>Workflow Chair</b>: IJCAI workshop 2021</p>
-            <p><b>Conference Reviewer</b>: NeurIPS, ICML, ICLR, CVPR, ICCV, ECCV, AISTATS, UAI, KDD, AAAI, IJCAI, etc.
-            </p>
-            <p><b>Journal Reviewer</b>: TIP, TMLR, MLJ, TKDE, TNNLS, ACM Computing Surveys, etc.</p>
-        </div>
-
-
 
         <div id="supervise">
 
             <hr style="clear: both;">
-            <h2>Co-Supervision</h2>
+            <h2>Students</h2>
         </div>
-
-
-
-
-        <div class="awards" id="awards">
-            <hr style="clear: both;">
-            <h2>Honors and Awards</h2>
-            <p>Outstanding Reviewer of NeurIPS, 2023</p>
-            <p>Outstanding Reviewer of ICLR, 2023</p>
-            <p>School of Computer Science Research Students Excellence Prize, 2019</p>
-            <p>CommBank Year 4 Prize (Highest WAM in the Honours Year), 2019</p>
-            <p>Displayr Thesis Prize (Best Thesis Performance), 2018</p>
-            <p>CSE Undergraduate Performance Prize (7th Place), 2018</p>
-        </div>
-
-
 
         <div id="teaching">
             <hr style="clear: both;">
             <h2>Teaching & Talk Experience</h2>
         </div>
+
+        <div class="activities" id="activities">
+            <hr style="clear: both;">
+            <h2>Services</h2>
+        </div>
+
+
+        <div class="awards" id="awards">
+            <hr style="clear: both;">
+            <h2>Honors and Awards</h2>
+        </div>
+
+
+
 
     </div>
 

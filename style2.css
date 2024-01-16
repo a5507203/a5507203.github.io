@@ -1,6 +1,5 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
 }
 
 .sidebar {
@@ -75,19 +74,19 @@ button i {
     top: 10px;
     left: 10px;
 }
-@media screen  and (min-width: 1001px) and (max-width: 5000px) {
+@media screen  and (min-width: 1081px) and (max-width: 5000px) {
     .sidebar {
         width: 280px;
 
     }
 }
-@media screen and (min-width: 601px)  and (max-width: 1000px) {
+@media screen and (min-width: 601px)  and (max-width: 1080px) {
     .sidebar {
         width: 100px;
 
     }
     .centered2{
-        padding: 0px 10px 0px 110px;
+        padding: 0px 10px 0px 130px;
     }    
     .sidebar button {
        color: white;

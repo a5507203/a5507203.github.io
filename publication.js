@@ -101,7 +101,6 @@ function createPubTable() {
       item.project
     );
   });
-
   document.addEventListener("DOMContentLoaded", function (e) {
     document.getElementById('pubWrapper').appendChild(table);
   });
