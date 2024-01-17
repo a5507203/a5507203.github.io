@@ -5,7 +5,12 @@ const publicationData = [
     authors: "Y Lin, Y Yao, X Shi, M Gong, X Shen, D Xu, T Liu",
     publisher: "NeurIPS",
     year: "2023",
-    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:uXLvxth83S4J:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcxyU:AFWwaeYAAAAAZXga3yVLuVf__VMaQOBf7SIPpwg&scisig=AFWwaeYAAAAAZXga3-qL_ebn_OMTmdbmn7GxZB4&scisf=4&ct=citation&cd=-1&hl=en",
+    bib: `@inproceedings{lin2023cs,\
+      title={CS-Isolate: Extracting Hard Confident Examples by Content and Style Isolation},\
+      author={Lin, Yexiong and Yao, Yu and Shi, Xiaolong and Gong, Mingming and Shen, Xu and Xu, Dong and Liu, Tongliang},\
+      booktitle={Thirty-seventh Conference on Neural Information Processing Systems},\
+      year={2023}\
+    }`,
     code: "https://github.com/tmllab/2023_NeurIPS_CS-isolate",
     project: null
   },
@@ -15,7 +20,14 @@ const publicationData = [
     authors: "Y Yao, M Gong, Y Du, J Yu, B Han, K Zhang, T Liu",
     publisher: "ICML",
     year: "2023",
-    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:j7WJKVMdN90J:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMc0dI:AFWwaeYAAAAAZXgaydKTZgri0joh94WBfSzDlvE&scisig=AFWwaeYAAAAAZXgaySlJ-Kzu4wD8onv94hBZ-p8&scisf=4&ct=citation&cd=-1&hl=en",
+    bib: `@inproceedings{yao2023better,\
+      title={Which is better for learning with noisy labels: the semi-supervised method or modeling label noise?},\
+      author={Yao, Yu and Gong, Mingming and Du, Yuxuan and Yu, Jun and Han, Bo and Zhang, Kun and Liu, Tongliang},\
+      booktitle={International Conference on Machine Learning},\
+      pages={39660--39673},\
+      year={2023},\
+      organization={PMLR}\
+    }`,
     code: "https://github.com/tmllab/2023_ICML_Which-is-Better-for-Learning-with-Noisy-Labels",
     project: null
   },
@@ -25,7 +37,15 @@ const publicationData = [
     authors: "S Ma, X Fang, Y Yao, J Li, DC Morgan, Y Xia, CSM Kwok, MCK Lo, DMD Siu, KK Tsia, A Yang, JWK Ho",
     publisher: "Computational and Structural Biotechnology Journal",
     year: "2023",
-    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:WiUW5U11JbwJ:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcqOA:AFWwaeYAAAAAZXgasOAsqm95pYzIgtCggsWrsYk&scisig=AFWwaeYAAAAAZXgasHVrbuGkJ0a_reeQxNskiK8&scisf=4&ct=citation&cd=-1&hl=en",
+    bib: `@article{ma2023starmapvis,\
+      title={StarmapVis: An interactive and narrative visualisation tool for single-cell and spatial data},\
+      author={Ma, Shichao and Fang, Xiunan and Yao, Yu and Li, Jianfu and Morgan, Daniel C and Xia, Yongyan and Kwok, Crystal SM and Lo, Michelle CK and Siu, Dickson MD and Tsia, Kevin K and others},\
+      journal={Computational and Structural Biotechnology Journal},\
+      volume={21},\
+      pages={1598--1605},\
+      year={2023},\
+      publisher={Elsevier}\
+    }`,
     code: "https://github.com/holab-hku/starmapVis",
     project: "https://holab-hku.github.io/starmapVis"
   },
@@ -35,7 +55,14 @@ const publicationData = [
     authors: "J Shen, Y Yao, S Huang, Z Wang, R Wang, J Yu, T Liu",
     publisher: "Machine Learning",
     year: "2023",
-    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:Y6-_SM2--OYJ:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcjdM:AFWwaeYAAAAAZXgaldO1H07DFOJCdzUw_SQSVGM&scisig=AFWwaeYAAAAAZXgalXkvXSp_mSrzJDN-lGpqVyI&scisf=4&ct=citation&cd=-1&hl=en",
+    bib: `@article{shen2023protosimi,\
+      title={ProtoSimi: label correction for fine-grained visual categorization},\
+      author={Shen, Jialiang and Yao, Yu and Huang, Shaoli and Wang, Zhiyong and Zhang, Jing and Wang, Ruxing and Yu, Jun and Liu, Tongliang},\
+      journal={Machine Learning},\
+      pages={1--18},\
+      year={2023},\
+      publisher={Springer}\
+    }`,
     code: null,
     project: null
   },
@@ -45,7 +72,12 @@ const publicationData = [
     authors: "Y Yao, T Liu, B Han, M Gong, G Niu, M Sugiyama, D Tao",
     publisher: "ICLR",
     year: "2022",
-    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:sPLcddlg5zQJ:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcZ0I:AFWwaeYAAAAAZXgaf0InOZJUY1wTHK0kSxZ6xPc&scisig=AFWwaeYAAAAAZXgaf_XHSCs7ODttOe0SdhqkuwM&scisf=4&ct=citation&cd=-1&hl=en",
+    bib: `@article{yao2020rethinking,\
+      title={Rethinking class-prior estimation for positive-unlabeled learning},\
+      author={Yao, Yu and Liu, Tongliang and Han, Bo and Gong, Mingming and Niu, Gang and Sugiyama, Masashi and Tao, Dacheng},\
+      journal={arXiv preprint arXiv:2002.03673},\
+      year={2020}\
+    }`,
     code: "https://github.com/tmllab/2022_ICLR_Rethinking-Class-Prior-Estimation-for-Positive-Unlabeled-Learning",
     project: null
   },
@@ -55,7 +87,13 @@ const publicationData = [
     authors: "Y Yao, B Yu, C Gong, T Liu",
     publisher: "TNNLS",
     year: "2021",
-    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:xP_hjpUIeu4J:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcIvw:AFWwaeYAAAAAZXgaOvxDYfAI2B7SxZzciOu0QF8&scisig=AFWwaeYAAAAAZXgaOvh0z_q3shbk0iuEKbX-P0s&scisf=4&ct=citation&cd=-1&hl=en",
+    bib: `@article{yao2021understanding,\
+      title={Understanding how pretraining regularizes deep learning algorithms},\
+      author={Yao, Yu and Yu, Baosheng and Gong, Chen and Liu, Tongliang},\
+      journal={IEEE Transactions on Neural Networks and Learning Systems},\
+      year={2021},\
+      publisher={IEEE}\
+    }`,
     code: null,
     project: null
   },
@@ -65,7 +103,14 @@ const publicationData = [
     authors: "Y Yao, T Liu, M Gong, B Han, G Niu, K Zhang",
     publisher: "NeurIPS",
     year: "2021",
-    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:MdA-d1ryuPEJ:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMcOrE:AFWwaeYAAAAAZXgaIrGtqXQbeh9g-Kh_yrbzu2k&scisig=AFWwaeYAAAAAZXgaInmOQp99bp-IpQIOH4pm1MI&scisf=4&ct=citation&cd=-1&hl=en",
+    bib: `@article{yao2021instance,\
+      title={Instance-dependent label-noise learning under a structural causal model},\
+      author={Yao, Yu and Liu, Tongliang and Gong, Mingming and Han, Bo and Niu, Gang and Zhang, Kun},\
+      journal={Advances in Neural Information Processing Systems},\
+      volume={34},\
+      pages={4409--4420},\
+      year={2021}\
+    }`,
     code: "https://github.com/tmllab/2021_NeurIPS_Instance-dependent-Label-noise-Learning-under-a-Structural-Causal-Model",
     project: null
   },
@@ -75,7 +120,14 @@ const publicationData = [
     authors: "Y Yao, T Liu, B Han, M Gong, J Deng, G Niu, M Sugiyama",
     publisher: "NeurIPS",
     year: "2020",
-    bib: "https://scholar.googleusercontent.com/scholar.bib?q=info:KQqfFfmllpQJ:scholar.google.com/&output=citation&scisdr=ClExJ96GEJiqhdMflR4:AFWwaeYAAAAAZXgZjR5Z8LuhQMMIRWaySgc2jy0&scisig=AFWwaeYAAAAAZXgZjcsP20srLTFP9MlsOpUPBgw&scisf=4&ct=citation&cd=-1&hl=en",
+    bib: `@article{yao2020dual,\
+      title={Dual t: Reducing estimation error for transition matrix in label-noise learning},\
+      author={Yao, Yu and Liu, Tongliang and Han, Bo and Gong, Mingming and Deng, Jiankang and Niu, Gang and Sugiyama, Masashi},\
+      journal={Advances in neural information processing systems},\
+      volume={33},\
+      pages={7260--7271},\
+      year={2020}\
+    }`,
     code: "https://github.com/tmllab/2020_NeurIPS_dual-t-reducing-estimation-error-for-transition-matrix-in-label-noise-learning",
     project: null
   }
@@ -129,7 +181,7 @@ function addPublication(table, link, title, authors, publisher, year, bib, code,
 
   const pubDiv = document.createElement('div');
   pubDiv.className = "publisher";
-  publisher = publisher + '<span class=extralink> [<a href=' + bib + ' target="_blank">bib</a>]';
+  publisher = publisher + `<span class=extralink> [<a href="#" onclick="copyBibToClipboard('${bib}', event)">bib</a>]`;
   if (code != null) {
     publisher = publisher + ' [<a href=' + code + ' target="_blank">Code</a>]';
 
@@ -153,3 +205,32 @@ function addPublication(table, link, title, authors, publisher, year, bib, code,
 }
 
 createPubTable();
+
+function copyBibToClipboard(bibText, event) {
+  event.preventDefault();
+  navigator.clipboard.writeText(bibText).then(() => {
+    // Show the modal
+    var modal = document.getElementById('myModal');
+    modal.style.visibility = "visible";
+
+    // Hide the modal after 3 seconds
+    setTimeout(() => {
+      modal.style.visibility = "hidden";
+    }, 3000);
+  }).catch((err) => {
+    // Handle any errors that occur during the copy attempt.
+    console.error('Unable to copy text', err);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  var span = document.getElementsByClassName("close")[0];
+  if (span) {
+    span.onclick = function () {
+      var modal = document.getElementById('myModal');
+      modal.style.visibility = "hidden";
+    };
+  } else {
+    console.error('The close button was not found.');
+  }
+});
