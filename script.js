@@ -9,7 +9,7 @@ function toggleMenu() {
 
 function refreshUI(event) {
     if (window.innerWidth >= 1081) {
-        document.getElementById("menuBar").style.width = "280px";
+        document.getElementById("menuBar").style.width = "250px";
         document.getElementById("menuBar").style.display = "block";
     }
     if (window.innerWidth <= 600) {
