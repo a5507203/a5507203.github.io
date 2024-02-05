@@ -22,7 +22,7 @@ const superviseData = [
         details: "<b>Ph.D. Candidate</b> in Computer Science, 03/2022-Present"
     },
     {
-        name: "Yang Bo",
+        name: "Boyang Sun",
         url: "https://www.linkedin.com/in/boyang-sun-20669322a/?originalSubdomain=ae",
         coadvised: "Prof. Kun Zhang",
         institution: "Mohamed bin Zayed University of Artificial Intelligence",
