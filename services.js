@@ -1,5 +1,9 @@
 
 const professional_activities = {
+    "journal_editor": [
+       "Action Editor: Transactions on Machine Learning Research"
+    ],
+    
     "area_chair": [
         {
             "conference": "Australasian Joint Conference on Artificial Intelligence (AJCAI)",
@@ -64,7 +68,6 @@ const professional_activities = {
         "IEEE Transactions on Multimedia",
         "International Journal of Computer Vision",
         "ACM Computing Surveys",
-        "Transactions on Machine Learning Research",
         "Machine Learning Journal",
         "Neural Networks"
     ]
@@ -97,6 +100,7 @@ function createListWithHeading(heading, entries) {
 // Function to append the lists to the DOM
 function appendServicesToDOM() {
 
+    const journalEditorSection = createListWithHeading('Journal Editor', professional_activities.journal_editor);
     // Append Area Chair list with heading
     const areaChairSection = createListWithHeading('Area Chair', professional_activities.area_chair);
     // Append Conference Reviewer list with heading
@@ -107,6 +111,7 @@ function appendServicesToDOM() {
 
     document.addEventListener("DOMContentLoaded", function (e) {
         const container = document.getElementById('activities'); 
+        container.appendChild(journalEditorSection);
         container.appendChild(areaChairSection);
         container.appendChild(conferenceReviewerSection);
         container.appendChild(journalReviewerSection);
