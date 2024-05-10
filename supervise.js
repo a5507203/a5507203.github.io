@@ -1,46 +1,45 @@
 
 const superviseData = [
     {
+        name: "Boyang Sun",
+        url: "https://www.linkedin.com/in/boyang-sun-20669322a/?originalSubdomain=ae",
+        institution: "The Mohamed bin Zayed University of Artificial Intelligence",
+        details: '<b>Ph.D. Candidate</b> in Computer Science, 2024-Present'
+    },
+    {
         name: "Ziming Hong",
         url: "https://openreview.net/profile?id=~Ziming_Hong1",
         coadvised: "Prof. Tongliang Liu",
         institution: "The University of Sydney",
-        details: "<b>Ph.D. Candidate</b> in Computer Science, 03/2023-Present"
+        details: "<b>Ph.D. Candidate</b> in Computer Science, 2023-Present"
     },
     {
         name: "Jiyang Zheng",
         url: "https://www.linkedin.com/in/roger-zheng-3076b1171/",
         coadvised: "Prof. Tongliang Liu",
         institution: "The University of Sydney",
-        details: '<b>Ph.D. Candidate</b> in Computer Science, 03/2022-Present'
+        details: '<b>Ph.D. Candidate</b> in Computer Science, 2022-Present'
     },
     {
         name: "Yexiong Lin",
         url: "https://yexionglin.github.io/",
         coadvised: "Prof. Tongliang Liu",
         institution: "The University of Sydney",
-        details: "<b>Ph.D. Candidate</b> in Computer Science, 03/2022-Present"
-    },
-    {
-        name: "Boyang Sun",
-        url: "https://www.linkedin.com/in/boyang-sun-20669322a/?originalSubdomain=ae",
-        coadvised: "Prof. Kun Zhang",
-        institution: "Mohamed bin Zayed University of Artificial Intelligence",
-        details: "<b>Research Assistant</b> in Machine Learning, 06/2023-Present"
+        details: "<b>Ph.D. Candidate</b> in Computer Science, 2022-Present"
     },
     {
         name: "Yang Zhou",
         url: "https://www.linkedin.com/in/yang-zhou-1b4b8524b/",
         coadvised: "Prof. Tongliang Liu",
         institution: "The University of Sydney",
-        details: "<b>Honors Student</b> in Computer Science (<b>University Medal</b>), 03/2022-06/2023"
+        details: "<b>Honors Student</b> in Computer Science (<b>University Medal</b>), 2022-2023"
     },
     {
         name: "James Wood",
         url: "https://www.linkedin.com/in/james-wood-4060/?originalSubdomain=au",
         coadvised: "Prof. Tongliang Liu",
         institution: "The University of Sydney",
-        details: "<b>Honors Student</b> in Computer Science (<b>University Medal</b>), 06/2020-06/2021"
+        details: "<b>Honors Student</b> in Computer Science (<b>University Medal</b>), 2020-2021"
     }
 ];
 

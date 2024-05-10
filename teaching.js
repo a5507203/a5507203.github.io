@@ -1,6 +1,12 @@
 const teachingData = [
 
     {
+        role: "Lecturer",
+        description: "Advanced Machine Learning",
+        institution: "The University of Sydney",
+        year: "2024"
+    },
+    {
         role: "Guest Lecturer",
         description: "Techniques and Assumptions in Sample-Selection-Based Methods for Learning with Noisy Labels",
         institution: "Mohamed bin Zayed University of Artificial Intelligence",
@@ -20,7 +26,7 @@ const teachingData = [
     },
     {
         role: "Teaching Assistant",
-        description: "Advanced Machine Learning (for Master)",
+        description: "Advanced Machine Learning",
         institution: "The University of Sydney",
         year: "2019-2022"
     },
