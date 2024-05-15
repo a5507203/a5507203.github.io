@@ -3,7 +3,15 @@ const superviseData = [
     {
         name: "Boyang Sun",
         url: "https://www.linkedin.com/in/boyang-sun-20669322a/?originalSubdomain=ae",
+        coadvised: "Prof. Kun Zhang",
         institution: "The Mohamed bin Zayed University of Artificial Intelligence",
+        details: '<b>Ph.D. Candidate</b> in Computer Science, 2024-Present'
+    },
+    {
+        name: "Tianyu Huang",
+        url: "#",
+        coadvised: "Prof. Tongliang Liu",
+        institution: "The University of Sydney",
         details: '<b>Ph.D. Candidate</b> in Computer Science, 2024-Present'
     },
     {
@@ -15,17 +23,31 @@ const superviseData = [
     },
     {
         name: "Jiyang Zheng",
-        url: "https://www.linkedin.com/in/roger-zheng-3076b1171/",
+        url: "https://scholar.google.com.au/citations?user=pM9DLNIAAAAJ&hl=en",
         coadvised: "Prof. Tongliang Liu",
         institution: "The University of Sydney",
-        details: '<b>Ph.D. Candidate</b> in Computer Science, 2022-Present'
+        details: '<b>Ph.D. Candidate</b> in Computer Science, 2023-Present'
     },
     {
         name: "Yexiong Lin",
         url: "https://yexionglin.github.io/",
         coadvised: "Prof. Tongliang Liu",
         institution: "The University of Sydney",
-        details: "<b>Ph.D. Candidate</b> in Computer Science, 2022-Present"
+        details: "<b>Ph.D. Candidate</b> in Computer Science, 2023-Present"
+    },
+    {
+        name: "Longjie Zhao",
+        url: "#",
+        coadvised: "Prof. Tongliang Liu",
+        institution: "The University of Sydney",
+        details: "<b>MPhil</b> in Computer Science, 2024-Present"
+    },
+    {
+        name: "Jialiang Shen",
+        url: "https://scholar.google.com/citations?user=BJLDZPwAAAAJ&hl=zh-CN",
+        coadvised: "Prof. Tongliang Liu",
+        institution: "The University of Sydney",
+        details: "<b>MPhil</b> in Computer Science, 2020-2021"
     },
     {
         name: "Yang Zhou",

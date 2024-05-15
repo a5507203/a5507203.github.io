@@ -296,7 +296,7 @@ h1 {
 }
 
 P {
-    font-size: 12pt;
+    font-size: 11pt;
     background-color: transparent;
     /* Makes the <p> tag's background transparent */
 
@@ -313,7 +313,7 @@ button i {
 }
 
 a {
-    /* font-size: 12pt; */
+    /* font-size: 11pt; */
     font-weight: 400;
     background-size: 200% 100%;
     background-position: -100%;
@@ -344,7 +344,7 @@ a:active {
 
 .publisher {
     color: rgb(170, 0, 0);
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: 500;
     padding-bottom: 1rem !important;
 }
@@ -352,7 +352,7 @@ a:active {
 .talk,
 .supervisor,
 .student {
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: 400;
     padding-bottom: 1rem !important;
 }
@@ -374,7 +374,7 @@ body,
 td,
 input {
     font-weight: 400;
-    font-size: 12pt;
+    font-size: 11pt;
     line-height: 1.24;
 }
 
@@ -400,10 +400,16 @@ ol {
     padding: 0;
     border: 0;
 }
-
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;  
+}
 li {
     margin-top: 5px;
     margin-top: 5px;
+    
+    list-style-position: inside;
     padding: 0;
     border: 0;
 }
@@ -478,7 +484,7 @@ button {
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 12pt;
+    font-size: 11pt;
     width: 250px;
     border: 0;
     overflow:hidden;
@@ -546,7 +552,7 @@ button:focus {
         background-color: #c9c9c9;
     }
     .centered{
-        padding: 0px 10px 0px 10px;
+        padding: 0px 15px 0px 15px;
     }
 
 
@@ -568,7 +574,7 @@ button:focus {
     /* color: black; */
     text-align: center;
     background-color:rgb(100, 255, 255);
-    font-size: 12pt;
+    font-size: 11pt;
     border-radius: 5px;
     border-color: #818181;
     /* box-shadow: 0 1px 0px rgba(0,0,0,.2);  */
@@ -579,7 +585,7 @@ button:focus {
     position: absolute;
     top: 0;
     right: 10px;
-    font-size: 12pt;
+    font-size: 11pt;
     line-height: 20px;
     cursor: pointer;
   }
