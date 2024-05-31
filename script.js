@@ -38,16 +38,10 @@ function changeMenu(id) {
     var teaching = document.getElementById("teaching");
     var news = document.getElementById("news");
     var goal = document.getElementById("goal");
-   
+
     let l = [goal, news, supervise, pubWrapper, activities, teaching, awards]
 
-    if (id == 7){
-        var url = "https://calendly.com/yu_yao/meeting";
-            
-        // Open the URL in a new browser tab
-        window.open(url, '_blank').focus();
-     }
-    else{
+
 
     for (e of l) {
 
@@ -55,13 +49,21 @@ function changeMenu(id) {
 
     }
     l[id].style.display = "block";
-    if (id == 2){
+    if (id == 2) {
         l[1].style.display = "block";
         l[0].style.display = "block";
     }
-    }
+
 
 
     refreshUI();
 
+}
+
+function openURL() {
+    // URL to open
+    var url = "https://calendly.com/yu_yao/meeting";
+
+    // Open the URL in a new browser tab
+    window.open(url, '_blank').focus();
 }
