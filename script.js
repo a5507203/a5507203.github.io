@@ -41,6 +41,13 @@ function changeMenu(id) {
    
     let l = [goal, news, supervise, pubWrapper, activities, teaching, awards]
 
+    if (id == 7){
+        var url = "https://calendly.com/yu_yao/meeting";
+            
+        // Open the URL in a new browser tab
+        window.open(url, '_blank').focus();
+     }
+    else{
 
     for (e of l) {
 
@@ -52,6 +59,8 @@ function changeMenu(id) {
         l[1].style.display = "block";
         l[0].style.display = "block";
     }
+    }
+
 
     refreshUI();
 
