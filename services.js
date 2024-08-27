@@ -6,8 +6,12 @@ const professional_activities = {
     
     "area_chair": [
         {
+            "conference": "The Thirteenth International Conference on Learning Representations (ICLR)",
+            "years": ["2025"]
+        },
+        {
             "conference": "Australasian Joint Conference on Artificial Intelligence (AJCAI)",
-            "years": ["2023"]
+            "years": ["2023","2024"]
         }
     ],
     "conference_reviewer": [
