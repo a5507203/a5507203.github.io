@@ -1,13 +1,7 @@
 
 const superviseData = [
     
-    {
-        name: "Boyang Sun",
-        url: "https://www.linkedin.com/in/boyang-sun-20669322a/?originalSubdomain=ae",
-        coadvised: "Prof. Kun Zhang",
-        institution: "The Mohamed bin Zayed University of Artificial Intelligence",
-        details: '<b>Ph.D. Candidate</b> in Computer Science, 2024-Present'
-    },
+
     {
         name: "Tianyu Huang",
         url: "#",
