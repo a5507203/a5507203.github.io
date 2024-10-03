@@ -1,5 +1,27 @@
 const publicationData = [
   {
+    link: "",
+    title: "Identifying Latent State-Transition Processes for Individualized Reinforcement Learning",
+    authors: "Y Sun, B Huang, Y Yao, D Zeng, X Dong, S Jin, B Sun, R Legaspi, K Ikeda, P Spirtes, K Zhang",
+    publisher: "NeurIPS",
+    year: "2024",
+    bib: `online soon
+    }`,
+    code: "",
+    project: null
+  },
+  {
+    link: "",
+    title: "Learning the Latent Causal Structure for Modeling Label Noise",
+    authors: "Y Lin, Y Yao, T Liu",
+    publisher: "NeurIPS",
+    year: "2024",
+    bib: `online soon
+    }`,
+    code: "",
+    project: null
+  },
+  {
     link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OkcaMKAAAAAJ&sortby=pubdate&citation_for_view=OkcaMKAAAAAJ:4DMP91E08xMC",
     title: "CS-Isolate: Extracting Hard Confident Examples by Content and Style Isolation",
     authors: "Y Lin, Y Yao, X Shi, M Gong, X Shen, D Xu, T Liu",
