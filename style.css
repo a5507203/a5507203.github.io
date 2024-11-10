@@ -334,6 +334,10 @@ a:hover {
     color: auto;
 }
 
+.index_column {
+    vertical-align: top; /* Aligns the content of the index column to the top */
+  }
+
 a:active {
     color: coral;
 }
@@ -346,7 +350,7 @@ a:active {
     color: rgb(170, 0, 0);
     font-size: 11pt;
     font-weight: 500;
-    padding-bottom: 1rem !important;
+    padding-bottom: 8px !important;
 }
 
 .talk,
@@ -354,8 +358,15 @@ a:active {
 .student {
     font-size: 11pt;
     font-weight: 400;
-    padding-bottom: 1rem !important;
+    padding-bottom: 8px !important;
 }
+.index_column {
+    width: 5px; /* Set width of the index column */
+    text-align: right; /* Right-align text in the index column */
+    vertical-align: top; /* Aligns the content to the top */
+    padding-right: 4px;
+  }
+  
 
 .extralink {
     font-size: 10pt !important;
@@ -510,8 +521,15 @@ button:focus {
     /* box-shadow: 2px 2px #dbd8d8; */
 }
 
+table {
+    border-collapse: collapse;
+ }
 
 
+td, th {
+    padding: 0px; /* Reduce padding to decrease space */
+    line-height: 1.2; /* Adjust line-height as needed */
+ }
 #hamburgerIcon {
     display: none;
     font-size: 30px;

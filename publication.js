@@ -1,24 +1,52 @@
 const publicationData = [
   {
-    link: "",
+    link: "https://openreview.net/forum?id=iPtgY9cJaV",
     title: "Identifying Latent State-Transition Processes for Individualized Reinforcement Learning",
     authors: "Y Sun, B Huang, Y Yao, D Zeng, X Dong, S Jin, B Sun, R Legaspi, K Ikeda, P Spirtes, K Zhang",
     publisher: "NeurIPS",
     year: "2024",
-    bib: `online soon
-    }`,
-    code: "",
+    bib: `online soon`,
+    code: null,
     project: null
   },
   {
-    link: "",
+    link: "https://openreview.net/forum?id=nJKfNiEBvq&referrer=%5Bthe%20profile%20of%20",
     title: "Learning the Latent Causal Structure for Modeling Label Noise",
     authors: "Y Lin, Y Yao, T Liu",
     publisher: "NeurIPS",
     year: "2024",
-    bib: `online soon
+    bib: `online soon`,
+    code: null,
+    project: null
+  },
+  {
+    link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OkcaMKAAAAAJ&sortby=pubdate&citation_for_view=OkcaMKAAAAAJ:dhFuZR0502QC",
+    title: "Enhancing contrastive learning for ordinal regression via ordinal content preserved data augmentation",
+    authors: "J Zheng, Y Yao, B Han, D Wang, T Liu",
+    publisher: "ICLR",
+    year: "2024",
+    bib: `@inproceedings{zheng2024enhancing,\
+      title={Enhancing contrastive learning for ordinal regression via ordinal content preserved data augmentation},\
+      author={Zheng, Jiyang and Yao, Yu and Han, Bo and Wang, Dadong and Liu, Tongliang},\
+      booktitle={The Twelfth International Conference on Learning Representations},\
+      year={2024}\
     }`,
-    code: "",
+    code: null,
+    project: null
+  },
+  {
+    link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OkcaMKAAAAAJ&sortby=pubdate&citation_for_view=OkcaMKAAAAAJ:QIV2ME_5wuYC",
+    title: "Improving Non-Transferable Representation Learning by Harnessing Content and Style",
+    authors: "Z Hong, Z Wang, L Shen, Y Yao, Z Huang, S Chen, C Yang, M Gong, T Liu",
+    publisher: "ICLR",
+    year: "2024",
+    bib: `@inproceedings{hong2024improving,\
+      title={Improving non-transferable representation learning by harnessing content and style},\
+      author={Hong, Ziming and Wang, Zhenyi and Shen, Li and Yao, Yu and Huang, Zhuo and Chen, Shiming and Yang, Chuanwu and Gong, Mingming and Liu, Tongliang},\
+      booktitle={The Twelfth International Conference on Learning Representations},\
+      year={2024}\
+    }`,
+    code: null,
     project: null
   },
   {
@@ -34,6 +62,22 @@ const publicationData = [
       year={2023}\
     }`,
     code: "https://github.com/tmllab/2023_NeurIPS_CS-isolate",
+    project: null
+  },
+  {
+    link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OkcaMKAAAAAJ&sortby=pubdate&citation_for_view=OkcaMKAAAAAJ:4DMP91E08xMC",
+    title: "PNT-Edge: Towards Robust Edge Detection with Noisy Labels by Learning Pixel-level Noise Transitions",
+    authors: "W Xuan, S Zhao, Y Yao, J Liu, T Liu, Y Chen, B Du, D Tao",
+    publisher: "ACMMM",
+    year: "2023",
+    bib: `@inproceedings{xuan2023pnt,\
+      title={PNT-Edge: Towards robust edge detection with noisy labels by learning pixel-level noise transitions},\
+      author={Xuan, Wenjie and Zhao, Shanshan and Yao, Yu and Liu, Juhua and Liu, Tongliang and Chen, Yixin and Du, Bo and Tao, Dacheng},\
+      booktitle={Proceedings of the 31st ACM International Conference on Multimedia},\
+      pages={1924--1932},\
+      year={2023}\
+    }`,
+    code: "https://github.com/dreamxfar/pnt-edge",
     project: null
   },
   {
@@ -157,12 +201,14 @@ const publicationData = [
 
 
 
+
 function createPubTable() {
   // const wrapper =  document.createElement('div');
   // wrapper
   const table = document.createElement('table');
   const tbody = document.createElement('tbody');
   table.appendChild(tbody);
+  let index = 1;
   publicationData.forEach(item => {
     addPublication(table,
       item.link,
@@ -172,7 +218,8 @@ function createPubTable() {
       item.year,
       item.bib,
       item.code,
-      item.project
+      item.project,
+      index++
     );
   });
   document.addEventListener("DOMContentLoaded", function (e) {
@@ -183,48 +230,104 @@ function createPubTable() {
   return table;
 }
 
-function addPublication(table, link, title, authors, publisher, year, bib, code, project) {
+
+function addPublication(table, link, title, authors, publisher, year, bib, code, project, idx) {
   const row = document.createElement('tr');
   table.tBodies[0].appendChild(row);
 
-  const cell = document.createElement('td');
-  cell.className = "left_rows"
-  row.appendChild(cell);
+  // Create a cell for the index
+  const indexCell = document.createElement('td');
+  indexCell.className = "index_column";
+  const indexText = document.createTextNode(`${idx}.  `);
+  indexCell.appendChild(indexText); // Append the index text node to the cell
+  row.appendChild(indexCell); // Append the index cell to the row
+
+  // Create a main cell for the rest of the data
+  const mainCell = document.createElement('td');
+  mainCell.className = "left_rows";
+  row.appendChild(mainCell);
 
   const a = document.createElement('a');
   a.href = link;
   a.target = '_blank';
   a.textContent = title;
   a.className = "hyperlink";
+  mainCell.appendChild(a); // Append the title link to the main cell
 
+  // Authors information
   const authorsDiv = document.createElement('div');
   authors = authors.replace("Y Yao", '<b>Y Yao</b>');
   authorsDiv.innerHTML = authors;
+  mainCell.appendChild(authorsDiv);
 
+  // Publisher information
   const pubDiv = document.createElement('div');
   pubDiv.className = "publisher";
-  publisher = publisher + `<span class=extralink> [<a href="#" onclick="copyBibToClipboard('${bib}', event)">bib</a>]`;
+  publisher += `<span class="extralink"> [<a href="#" onclick="copyBibToClipboard('${bib}', event)">bib</a>]`;
   if (code != null) {
-    publisher = publisher + ' [<a href=' + code + ' target="_blank">Code</a>]';
-
+    publisher += ` [<a href="${code}" target="_blank">Code</a>]`;
     if (project != null) {
-
-      publisher = publisher + ' [<a href=' + project + ' target="_blank">Project</a>]';
+      publisher += ` [<a href="${project}" target="_blank">Project</a>]`;
     }
-
   }
-  publisher = publisher + "</span>";
-
+  publisher += "</span>";
   pubDiv.innerHTML = publisher;
-  cell.appendChild(a);
-  cell.appendChild(authorsDiv);
-  cell.appendChild(pubDiv);
+  mainCell.appendChild(pubDiv);
 
+  // Year cell
   const yearDiv = document.createElement('td');
   yearDiv.className = "table_year";
   yearDiv.innerHTML = year;
   row.appendChild(yearDiv);
 }
+
+
+
+// function addPublication(table, link, title, authors, publisher, year, bib, code, project, idx) {
+//   const row = document.createElement('tr');
+//   table.tBodies[0].appendChild(row);
+
+//   const cell = document.createElement('td');
+//   cell.className = "left_rows"
+//   row.appendChild(cell);
+
+//   const a = document.createElement('a');
+//   a.href = link;
+//   a.target = '_blank';
+//   a.textContent = title;
+//   a.className = "hyperlink";
+//   // cell.appendChild(a);
+//   const authorsDiv = document.createElement('div');
+//   authors = authors.replace("Y Yao", '<b>Y Yao</b>');
+//   authorsDiv.innerHTML = authors;
+
+//   const pubDiv = document.createElement('div');
+//   pubDiv.className = "publisher";
+//   publisher = publisher + `<span class=extralink> [<a href="#" onclick="copyBibToClipboard('${bib}', event)">bib</a>]`;
+//   if (code != null) {
+//     publisher = publisher + ' [<a href=' + code + ' target="_blank">Code</a>]';
+
+//     if (project != null) {
+
+//       publisher = publisher + ' [<a href=' + project + ' target="_blank">Project</a>]';
+//     }
+
+//   }
+//   publisher = publisher + "</span>";
+
+//   pubDiv.innerHTML = publisher;
+//   const indexText = document.createTextNode(`${idx}. `);
+//   cell.appendChild(indexText); // Append the index text node to the cell
+  
+//   cell.appendChild(a);
+//   cell.appendChild(authorsDiv);
+//   cell.appendChild(pubDiv);
+
+//   const yearDiv = document.createElement('td');
+//   yearDiv.className = "table_year";
+//   yearDiv.innerHTML = year;
+//   row.appendChild(yearDiv);
+// }
 
 createPubTable();
 
