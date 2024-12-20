@@ -6,7 +6,11 @@ const professional_activities = {
     
     "area_chair": [
         {
-            "conference": "The Thirteenth International Conference on Learning Representations (ICLR)",
+            "conference": "International Conference on Machine Learning (ICML)",
+            "years": ["2025"]
+        },
+        {
+            "conference": "International Conference on Learning Representations (ICLR)",
             "years": ["2025"]
         },
         {
@@ -21,7 +25,7 @@ const professional_activities = {
         },
         {
             "conference": "Advances in Neural Information Processing Systems (NeurIPS)",
-            "years": ["2020", "2021", "2022", "2023"]
+            "years": ["2020", "2021", "2022", "2023", "2024"]
         },
         {
             "conference": "International Conference on Learning Representations (ICLR)",
@@ -49,7 +53,7 @@ const professional_activities = {
         },
         {
             "conference": "Conference on Uncertainty in Artificial Intelligence (UAI)",
-            "years": ["2022", "2023"]
+            "years": ["2022", "2023", "2024"]
         },
         {
             "conference": "AAAI Conference on Artificial Intelligence (AAAI)",
@@ -61,7 +65,7 @@ const professional_activities = {
         },
         {
             "conference": "ACM International Conference on Multimedia (ACM MM)",
-            "years": ["2022"]
+            "years": ["2022", "2023", "2024"]
         }
     ],
     "journal_reviewer": [

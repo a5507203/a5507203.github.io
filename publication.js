@@ -1,6 +1,6 @@
 const publicationData = [
   {
-    link: "https://openreview.net/forum?id=iPtgY9cJaV",
+    link: "https://openreview.net/forum?id=kREpCQtHdN",
     title: "Identifying Latent State-Transition Processes for Individualized Reinforcement Learning",
     authors: "Y Sun, B Huang, Y Yao, D Zeng, X Dong, S Jin, B Sun, R Legaspi, K Ikeda, P Spirtes, K Zhang",
     publisher: "NeurIPS",
@@ -15,7 +15,12 @@ const publicationData = [
     authors: "Y Lin, Y Yao, T Liu",
     publisher: "NeurIPS",
     year: "2024",
-    bib: `online soon`,
+    bib: `@inproceedings{linlearning,\
+      title={Learning the Latent Causal Structure for Modeling Label Noise},\
+      author={Lin, Yexiong and Yao, Yu and Liu, Tongliang},\
+      booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},\
+      year={2024}\
+    }`,
     code: null,
     project: null
   },
