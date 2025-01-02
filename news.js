@@ -8,7 +8,7 @@ const newsItems = [
     { date: '[02-2024]', text: "I am an Action Editor for TMLR." },
     { date: '[01-2024]', text: "One papers is accepted by ICLR'24 (Spotlight). Congrats Ziming Hong!" },
     { date: '[01-2024]', text: "One paper is accepted by ICLR'24. Congrats Jiyang Zheng!" },
-    { date: '[12-2023]', text: "I joined the University of Sydney as a Lecturer." },
+    { date: '[12-2023]', text: "I joined The University of Sydney as a Lecturer." },
     { date: '[09-2023]', text: "One paper is accepted by NeurIPS'23." },
     { date: '[09-2023]', text: "Yang Zhou got the University Medal! Congrats Yang!" },
     { date: '[09-2023]', text: "One paper is accepted by NeurIPS'23. Congrats Yexiong Lin!" },
