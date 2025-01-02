@@ -10,7 +10,6 @@ const newsItems = [
     { date: '[01-2024]', text: "One paper is accepted by ICLR'24. Congrats Jiyang Zheng!" },
     { date: '[12-2023]', text: "I joined The University of Sydney as a Lecturer." },
     { date: '[09-2023]', text: "One paper is accepted by NeurIPS'23." },
-    { date: '[09-2023]', text: "Yang Zhou got the University Medal! Congrats Yang!" },
     { date: '[09-2023]', text: "One paper is accepted by NeurIPS'23. Congrats Yexiong Lin!" },
     { date: '[08-2023]', text: "I am an outstanding reviewer of NeurIPS'23." },
     { date: '[08-2023]', text: "I am an Area Chair of AJCAI'23." },
