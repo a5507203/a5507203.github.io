@@ -15,7 +15,6 @@ const newsItems = [
     { date: '[08-2023]', text: "I am an Area Chair of AJCAI'23." },
     { date: '[07-2023]', text: "One paper is accepted by MM'23. Congrats Wenjie Xuan!" },
     { date: '[04-2023]', text: "One paper is accepted by ICML'23." },
-    { date: '[03-2023]', text: "I started postdoctoral research at Mohamed Bin Zayed University of Artificial Intelligence and Carnegie Mellon University." },
     { date: '[01-2023]', text: "I am an outstanding reviewer of ICLR'23." },
     // ... Add all other news items following the same structure
   ];
