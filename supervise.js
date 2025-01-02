@@ -1,20 +1,25 @@
 
 const superviseData = [
-    
+   
+    {
+        name: "Boye Niu",
+        url: "#",
+        institution: "The University of Sydney",
+        details: '<b>Honors Student</b> in Statistics, 2024-Present'
+    },
 
     {
-        name: "Tianyu Huang",
+        name: "Kai Lian",
+        url: "#",
+        institution: "The University of Sydney",
+        details: '<b>Master Student</b> in Computer Science, 2024-Present'
+    },
+    {
+        name: "Ruojing Dong",
         url: "#",
         coadvised: "Prof. Tongliang Liu",
         institution: "The University of Sydney",
-        details: '<b>Ph.D. Candidate</b> in Computer Science, 2024-Present'
-    },
-    {
-        name: "Ziming Hong",
-        url: "https://openreview.net/profile?id=~Ziming_Hong1",
-        coadvised: "Prof. Tongliang Liu",
-        institution: "The University of Sydney",
-        details: "<b>Ph.D. Candidate</b> in Computer Science, 2023-Present"
+        details: "<b>Ph.D. Candidate</b> in Computer Science, 2024-Present"
     },
     {
         name: "Jiyang Zheng",
@@ -29,34 +34,6 @@ const superviseData = [
         coadvised: "Prof. Tongliang Liu",
         institution: "The University of Sydney",
         details: "<b>Ph.D. Candidate</b> in Computer Science, 2023-Present"
-    },
-    {
-        name: "Longjie Zhao",
-        url: "#",
-        coadvised: "Prof. Tongliang Liu",
-        institution: "The University of Sydney",
-        details: "<b>MPhil</b> in Computer Science, 2024-Present"
-    },
-    {
-        name: "Jialiang Shen",
-        url: "https://scholar.google.com/citations?user=BJLDZPwAAAAJ&hl=zh-CN",
-        coadvised: "Prof. Tongliang Liu",
-        institution: "The University of Sydney",
-        details: "<b>MPhil</b> in Computer Science, 2020-2021"
-    },
-    {
-        name: "Yang Zhou",
-        url: "https://www.linkedin.com/in/yang-zhou-1b4b8524b/",
-        coadvised: "Prof. Tongliang Liu",
-        institution: "The University of Sydney",
-        details: "<b>Honors Student</b> in Computer Science (<b>University Medal</b>), 2022-2023"
-    },
-    {
-        name: "James Wood",
-        url: "https://www.linkedin.com/in/james-wood-4060/?originalSubdomain=au",
-        coadvised: "Prof. Tongliang Liu",
-        institution: "The University of Sydney",
-        details: "<b>Honors Student</b> in Computer Science (<b>University Medal</b>), 2020-2021"
     }
 ];
 
