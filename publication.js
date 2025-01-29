@@ -1,11 +1,76 @@
 const publicationData = [
   {
+    "link": "https://openreview.net/forum?id=noidywkBba",
+    "title": "Chain-of-Focus Prompting: Leveraging Sequential Visual Cues to Prompt Large Autoregressive Vision Models",
+    "authors": "J Zheng, J Shen, Y Yao, M Wang, Y Yang, D Wang, T Liu",
+    "publisher": "ICLR",
+    "year": "2025",
+    "bib": `@inproceedings{zheng2025chain,\
+      title={Chain-of-Focus Prompting: Leveraging Sequential Visual Cues to Prompt Large Autoregressive Vision Models},\
+      author={Zheng, Jiyang and Shen, Jialiang and Yao, Yu and Wang, Min and Yang, Yang and Wang, Dadong and Liu, Tongliang},\
+      booktitle={The Thirteenth International Conference on Learning Representations},\
+      year={2025},\
+    }`,
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "https://openreview.net/forum?id=Q0s6kgrUMr",
+    "title": "A Robust Method to Discover Causal or Anticausal Relation by Noise Injection",
+    "authors": "Y Yao, Y Zhou, M Gong, K Zhang, T Liu",
+    "publisher": "ICLR",
+    "year": "2025",
+    "bib": `@inproceedings{yao2025Robust,\
+      title={A Robust Method to Discover Causal or Anticausal Relation by Noise Injection},\
+      author={Yao, Yu and Zhou, Yang and Gong, Mingming and Zhang, Kun and Liu, Tongliang},\
+      booktitle={The Thirteenth International Conference on Learning Representations},\
+      year={2025}\
+    }`,
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "https://arxiv.org/abs/2501.07834",
+    "title": "Flow: A Modular Approach to Automated Agentic Workflow Generation",
+    "authors": "B Niu, Y Song, K Lian, Y Shen, Y Yao, K Zhang, T Liu",
+    "publisher": "ICLR",
+    "year": "2025",
+    "bib": `@inproceedings{Niu2025Flow,\
+      title={Flow: A Modular Approach to Automated Agentic Workflow Generation},\
+      author={Niu, Boye and Song, Yiliao and Lian, Kai and Shen, Yifan and Yao, Yu and Zhang, Kun and Liu, Tongliang},\
+      booktitle={The Thirteenth International Conference on Learning Representations},\
+      year={2025}\
+    }`,
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "https://openreview.net/forum?id=gqbbL7k8BF",
+    "title": "A Conditional Independence Test in the Presence of Discretization",
+    "authors": "B Sun, Y Yao, H Hao, Y Qiu, K Zhang",
+    "publisher": "ICLR",
+    "year": "2025",
+    "bib": `@inproceedings{sun2024conditional,\
+      title={A Conditional Independence Test in the Presence of Discretization},\
+      author={Sun, Boyang and Yao, Yu and Hao, Huangyuan and Qiu, Yumou and Zhang, Kun},\
+      booktitle={The Thirteenth International Conference on Learning Representations},\
+      year={2025}\
+    }`,
+    "code": null,
+    "project": null
+  },
+  {
     link: "https://openreview.net/forum?id=kREpCQtHdN",
     title: "Identifying Latent State-Transition Processes for Individualized Reinforcement Learning",
     authors: "Y Sun, B Huang, Y Yao, D Zeng, X Dong, S Jin, B Sun, R Legaspi, K Ikeda, P Spirtes, K Zhang",
     publisher: "NeurIPS",
     year: "2024",
-    bib: `online soon`,
+    bib: `@inproceedings{sunidentifying, \
+      title={Identifying Latent State Transition Processes for Individualized Reinforcement Learning},\
+      author={Sun, Yuewen and Huang, Biwei and Yao, Yu and Zeng, Donghuo and Dong, Xinshuai and Legaspi, Roberto and Ikeda, Kazushi and Spirtes, Peter and Zhang, Kun}\
+      booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},\
+      year={2024}\
+    }`,
     code: null,
     project: null
   },
@@ -268,7 +333,9 @@ function addPublication(table, link, title, authors, publisher, year, bib, code,
   // Publisher information
   const pubDiv = document.createElement('div');
   pubDiv.className = "publisher";
-  publisher += `<span class="extralink"> [<a href="#" onclick="copyBibToClipboard('${bib}', event)">bib</a>]`;
+  if (bib!="online soon"){
+    publisher += `<span class="extralink"> [<a href="#" onclick="copyBibToClipboard('${bib}', event)">bib</a>]`;
+  }
   if (code != null) {
     publisher += ` [<a href="${code}" target="_blank">Code</a>]`;
     if (project != null) {
