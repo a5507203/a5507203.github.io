@@ -4,6 +4,7 @@ const superviseData = [
     {
         name: "Boye Niu",
         url: "#",
+        coadvised: "",
         institution: "The University of Sydney",
         details: '<b>Honors Student</b> in Statistics, 2024-Present'
     },
@@ -11,6 +12,7 @@ const superviseData = [
     {
         name: "Kai Lian",
         url: "#",
+        coadvised: "",
         institution: "The University of Sydney",
         details: '<b>Master Student</b> in Computer Science, 2024-Present'
     },
@@ -46,12 +48,19 @@ function createsuperviseTable(data) {
     data.forEach(item => {
         const tr = document.createElement('tr');
         const td = document.createElement('td');
-
+        
+        if (item.coadvised!=""){
         // Constructing the HTML content for the cell
         td.innerHTML = `<div class="hyperlink"><a href="${item.url}" target="_blank">${item.name}</a> <small>(co-advised with ${item.coadvised})<small> </div>
                         <div class="gray_font">${item.institution}</div>
                         <div class="student">${item.details}</div>`;
+        }
+        else {
 
+            td.innerHTML = `<div class="hyperlink"><a href="${item.url}" target="_blank">${item.name}</a>  </div>
+            <div class="gray_font">${item.institution}</div>
+            <div class="student">${item.details}</div>`;
+        }
         // Append cell to the row, and row to the tbody
         tr.appendChild(td);
         tbody.appendChild(tr);
