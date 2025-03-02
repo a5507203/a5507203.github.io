@@ -1,6 +1,21 @@
 const publicationData = [
   {
     "link": "https://openreview.net/forum?id=noidywkBba",
+    "title": "SmartCLIP: Modular Vision-language Alignment with Identification Guarantees",
+    "authors": "Shaoan Xie, Lingjing Kong, Yujia Zheng, Yu Yao, Zeyu Tang, Eric P. Xing, Guangyi Chen, Kun Zhang",
+    "publisher": "CVPR",
+    "year": "2025",
+    "bib": `@inproceedings{xie2025smartclip, \
+      title={SmartCLIP: Modular Vision-language Alignment with Identification Guarantees},\
+      author={Xie, Shaoan and Kong, Lingjing and Zheng, Yujia and Yao, Yu and Tang, Zeyu and Xing, Eric P. and Chen, Guangyi and Zhang, Kun}, \
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, \
+      year={2025}\
+    }`,
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "https://openreview.net/forum?id=noidywkBba",
     "title": "Chain-of-Focus Prompting: Leveraging Sequential Visual Cues to Prompt Large Autoregressive Vision Models",
     "authors": "J Zheng, J Shen, Y Yao, M Wang, Y Yang, D Wang, T Liu",
     "publisher": "ICLR",
@@ -9,7 +24,7 @@ const publicationData = [
       title={Chain-of-Focus Prompting: Leveraging Sequential Visual Cues to Prompt Large Autoregressive Vision Models},\
       author={Zheng, Jiyang and Shen, Jialiang and Yao, Yu and Wang, Min and Yang, Yang and Wang, Dadong and Liu, Tongliang},\
       booktitle={The Thirteenth International Conference on Learning Representations},\
-      year={2025},\
+      year={2025}\
     }`,
     "code": null,
     "project": null
