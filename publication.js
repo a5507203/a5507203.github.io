@@ -45,18 +45,18 @@ const publicationData = [
     "project": null
   },
   {
-    "link": "https://arxiv.org/abs/2501.07834",
-    "title": "Flow: A Modular Approach to Automated Agentic Workflow Generation",
+    "link": "https://openreview.net/pdf?id=sLKDbuyq99",
+    "title": "Flow: Modularized Agentic Workflow Automation",
     "authors": "B Niu, Y Song, K Lian, Y Shen, Y Yao, K Zhang, T Liu",
     "publisher": "ICLR",
     "year": "2025",
-    "bib": `@inproceedings{Niu2025Flow,\
-      title={Flow: A Modular Approach to Automated Agentic Workflow Generation},\
-      author={Niu, Boye and Song, Yiliao and Lian, Kai and Shen, Yifan and Yao, Yu and Zhang, Kun and Liu, Tongliang},\
-      booktitle={The Thirteenth International Conference on Learning Representations},\
+    "bib": `@inproceedings{niuflow, \
+      title={Flow: Modularized Agentic Workflow Automation},\
+      author={Niu, Boye and Song, Yiliao and Lian, Kai and Shen, Yifan and Yao, Yu and Zhang, Kun and Liu, Tongliang}, \
+      booktitle={The Thirteenth International Conference on Learning Representations} \
       year={2025}\
     }`,
-    "code": null,
+    "code": "https://github.com/tmllab/2025_ICLR_FLOW",
     "project": null
   },
   {
