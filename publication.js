@@ -1,6 +1,6 @@
 const publicationData = [
   {
-    "link": "https://openreview.net/forum?id=noidywkBba",
+    "link": "",
     "title": "SmartCLIP: Modular Vision-language Alignment with Identification Guarantees",
     "authors": "Shaoan Xie, Lingjing Kong, Yujia Zheng, Yu Yao, Zeyu Tang, Eric P. Xing, Guangyi Chen, Kun Zhang",
     "publisher": "CVPR",
