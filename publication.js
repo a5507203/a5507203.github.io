@@ -1,8 +1,38 @@
 const publicationData = [
   {
     "link": "",
+    "title": "A Lens into Interpretable Transformer Mistakes via Semantic Dependency",
+    "authors": "R Dong, Y Yao, B Han, T Liu",
+    "publisher": "ICML",
+    "year": "2025",
+    "bib": "online soon",
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "",
+    "title": "A Sample Efficient Conditional Independence Test in the Presence of Discretization ",
+    "authors": "B Sun, Y Yao, X Dong, Z Liu, T Liu, Y Qiu, K Zhang",
+    "publisher": "ICML",
+    "year": "2025",
+    "bib": "online soon",
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "",
+    "title": "Ranked from Within: Ranking Large Multimodal Models Without Labels",
+    "authors": "W Tu, W Deng, D Campbell, Y Yao, J Zheng, T Gedeon, T Liu",
+    "publisher": "ICML",
+    "year": "2025",
+    "bib": "online soon",
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "",
     "title": "SmartCLIP: Modular Vision-language Alignment with Identification Guarantees",
-    "authors": "Shaoan Xie, Lingjing Kong, Yujia Zheng, Yu Yao, Zeyu Tang, Eric P. Xing, Guangyi Chen, Kun Zhang",
+    "authors": "S Xie, L Kong, Y Zheng, Y Yao, Z Tang, E. P. Xing, G Chen, K Zhang",
     "publisher": "CVPR",
     "year": "2025",
     "bib": `@inproceedings{xie2025smartclip, \
