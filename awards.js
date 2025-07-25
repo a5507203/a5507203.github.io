@@ -1,11 +1,13 @@
-const awardsData = ["Outstanding Reviewer of NeurIPS, 2023",
-    "Outstanding Reviewer of ICLR, 2023",
-    "School of Computer Science Research Students Excellence Prize, 2019",
-    "CommBank Year 4 Prize (Highest WAM in the Honours Year), 2019",
-    "Displayr Thesis Prize (Best Thesis Performance), 2018",
-    "CSE Undergraduate Performance Prize (7th Place), 2018"]
-
-
+const awardsData = [
+  "Outstanding Area Chair Award, ICML (2025)",
+  "Outstanding Reviewer Award, UAI (2025)",
+  "Outstanding Reviewer Award, NeurIPS (2023)",
+  "Outstanding Reviewer Award, ICLR (2023)",
+  "Research Students Excellence Prize, School of Computer Science (2019)",
+  "CommBank Year 4 Prize (Highest WAM in Honours Year) (2019)",
+  "Displayr Thesis Prize (Best Thesis Performance) (2018)",
+  "CSE Undergraduate Performance Prize (7th Place) (2018)"
+];
 
 // Function to create a list with a heading
 function createList(entries) {
