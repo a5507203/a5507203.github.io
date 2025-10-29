@@ -1,31 +1,67 @@
 const publicationData = [
+
   {
     "link": "",
-    "title": "A Lens into Interpretable Transformer Mistakes via Semantic Dependency",
+    "title": "Can Dependencies Induced by LLM-Agent Workflows Be Trusted?",
+    "authors": "Y Yao, Y Song, Y Xie, M Fan, M Guo, T Liu",
+    "publisher": "NeurIPS",
+    "year": "2025",
+    "bib": "online soon",
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "",
+    "title": "Aligning What Matters: Masked Latent Adaptation for Text-to-Audio-Video Generation",
+    "authors": "J Zheng, S Pan, Y Yao, Z Wang, D Wang, T Liu",
+    "publisher": "NeurIPS",
+    "year": "2025",
+    "bib": "online soon",
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "https://proceedings.mlr.press/v267/dong25n.html",
+    "title": "Understanding Mistakes in Transformers through Token-level Semantic Dependencies",
     "authors": "R Dong, Y Yao, B Han, T Liu",
     "publisher": "ICML",
     "year": "2025",
-    "bib": "online soon",
+    "bib": `@inproceedings{donglens,\
+      title={A Lens into Interpretable Transformer Mistakes via Semantic Dependency},\
+      author={Dong, Ruo-Jing and Yao, Yu and Han, Bo and Liu, Tongliang},\
+      booktitle={Forty-second International Conference on Machine Learning}\
+      year={2025}\
+    }`,
     "code": null,
     "project": null
   },
   {
-    "link": "",
-    "title": "A Sample Efficient Conditional Independence Test in the Presence of Discretization ",
+    "link": "https://openreview.net/forum?id=rQK6IWHdzA",
+    "title": "A Sample Efficient Conditional Independence Test in the Presence of Discretization",
     "authors": "B Sun, Y Yao, X Dong, Z Liu, T Liu, Y Qiu, K Zhang",
     "publisher": "ICML",
     "year": "2025",
-    "bib": "online soon",
-    "code": null,
+    "bib": `@inproceedings{sun2025sample, \
+      title={A sample efficient conditional independence test in the presence of discretization}, \
+      author={Sun, Boyang and Yao, Yu and Dong, Xinshuai and Liu, Zongfang and Liu, Tongliang and Qiu, Yumou and Zhang, Kun}, \
+      booktitle={Forty-second International Conference on Machine Learning}\
+      year={2025}\
+    }`,
+    "code": "https://github.com/boyangaaaaa/DCT",
     "project": null
   },
   {
-    "link": "",
+    "link": "https://openreview.net/forum?id=F1BCivEK57",
     "title": "Ranked from Within: Ranking Large Multimodal Models Without Labels",
     "authors": "W Tu, W Deng, D Campbell, Y Yao, J Zheng, T Gedeon, T Liu",
     "publisher": "ICML",
     "year": "2025",
-    "bib": "online soon",
+    "bib": `@inproceedings{tu2025ranked,\
+      title={Ranked from Within: Ranking Large Multimodal Models Without Labels},\
+      author={Tu, Weijie and Deng, Weijian and Campbell, Dylan and Yao, Yu and Zheng, Jiyang and Gedeon, Tom and Liu, Tongliang},\
+      booktitle={Forty-second International Conference on Machine Learning},\
+      year={2025}\
+    }`,
     "code": null,
     "project": null
   },
@@ -378,7 +414,7 @@ function addPublication(table, link, title, authors, publisher, year, bib, code,
   // Publisher information
   const pubDiv = document.createElement('div');
   pubDiv.className = "publisher";
-  if (bib!="online soon"){
+  if (bib != "online soon") {
     publisher += `<span class="extralink"> [<a href="#" onclick="copyBibToClipboard('${bib}', event)">bib</a>]`;
   }
   if (code != null) {
@@ -435,7 +471,7 @@ function addPublication(table, link, title, authors, publisher, year, bib, code,
 //   pubDiv.innerHTML = publisher;
 //   const indexText = document.createTextNode(`${idx}. `);
 //   cell.appendChild(indexText); // Append the index text node to the cell
-  
+
 //   cell.appendChild(a);
 //   cell.appendChild(authorsDiv);
 //   cell.appendChild(pubDiv);

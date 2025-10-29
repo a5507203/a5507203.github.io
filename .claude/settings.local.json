@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:openreview.net)",
+      "WebFetch(domain:arxiv.org)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
