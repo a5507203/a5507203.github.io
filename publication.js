@@ -353,136 +353,49 @@ const publicationData = [
 
 
 
-function createPubTable() {
-  // const wrapper =  document.createElement('div');
-  // wrapper
-  const table = document.createElement('table');
-  const tbody = document.createElement('tbody');
-  table.appendChild(tbody);
-  let index = 1;
-  publicationData.forEach(item => {
-    addPublication(table,
-      item.link,
-      item.title,
-      item.authors,
-      item.publisher,
-      item.year,
-      item.bib,
-      item.code,
-      item.project,
-      index++
-    );
-  });
-  document.addEventListener("DOMContentLoaded", function (e) {
-    document.getElementById('pubWrapper').appendChild(table);
-  });
+// Register publications section with ContentManager
+ContentManager.registerSection('pubWrapper', function(container) {
+  const table = ContentManager.createTable();
 
+  publicationData.forEach((item, index) => {
+    const idx = index + 1;
 
-  return table;
-}
+    // Build title link
+    const titleLink = `<a href="${item.link}" target="_blank" class="hyperlink">${item.title}</a>`;
 
+    // Build authors (bold Y Yao)
+    const authors = `<div>${item.authors.replace('Y Yao', '<b>Y Yao</b>')}</div>`;
 
-function addPublication(table, link, title, authors, publisher, year, bib, code, project, idx) {
-  const row = document.createElement('tr');
-  table.tBodies[0].appendChild(row);
-
-  // Create a cell for the index
-  const indexCell = document.createElement('td');
-  indexCell.className = "index_column";
-  const indexText = document.createTextNode(`${idx}.  `);
-  indexCell.appendChild(indexText); // Append the index text node to the cell
-  row.appendChild(indexCell); // Append the index cell to the row
-
-  // Create a main cell for the rest of the data
-  const mainCell = document.createElement('td');
-  mainCell.className = "left_rows";
-  row.appendChild(mainCell);
-
-  const a = document.createElement('a');
-  a.href = link;
-  a.target = '_blank';
-  a.textContent = title;
-  a.className = "hyperlink";
-  mainCell.appendChild(a); // Append the title link to the main cell
-
-  // Authors information
-  const authorsDiv = document.createElement('div');
-  authors = authors.replace("Y Yao", '<b>Y Yao</b>');
-  authorsDiv.innerHTML = authors;
-  mainCell.appendChild(authorsDiv);
-
-  // Publisher information
-  const pubDiv = document.createElement('div');
-  pubDiv.className = "publisher";
-  if (bib != "online soon") {
-    publisher += `<span class="extralink"> [<a href="#" onclick="copyBibToClipboard('${bib}', event)">bib</a>]`;
-  }
-  if (code != null) {
-    publisher += ` [<a href="${code}" target="_blank">Code</a>]`;
-    if (project != null) {
-      publisher += ` [<a href="${project}" target="_blank">Project</a>]`;
+    // Build publisher with links
+    let publisherHtml = item.publisher;
+    if (item.bib !== "online soon") {
+      publisherHtml += `<span class="extralink"> [<a href="#" onclick="copyBibToClipboard('${item.bib}', event)">bib</a>]`;
+    } else {
+      publisherHtml += '<span class="extralink">';
     }
-  }
-  publisher += "</span>";
-  pubDiv.innerHTML = publisher;
-  mainCell.appendChild(pubDiv);
+    if (item.code) {
+      publisherHtml += ` [<a href="${item.code}" target="_blank">Code</a>]`;
+    }
+    if (item.project) {
+      publisherHtml += ` [<a href="${item.project}" target="_blank">Project</a>]`;
+    }
+    publisherHtml += '</span>';
 
-  // Year cell
-  const yearDiv = document.createElement('td');
-  yearDiv.className = "table_year";
-  yearDiv.innerHTML = year;
-  row.appendChild(yearDiv);
-}
+    const publisher = `<div class="publisher">${publisherHtml}</div>`;
 
+    // Build main cell content
+    const mainCellHtml = `${titleLink}${authors}${publisher}`;
 
+    // Add row with index, main content, and year
+    ContentManager.addTableRow(table, [
+      { html: `${idx}.  `, className: 'index_column' },
+      { html: mainCellHtml, className: 'left_rows' },
+      { html: item.year, className: 'table_year' }
+    ]);
+  });
 
-// function addPublication(table, link, title, authors, publisher, year, bib, code, project, idx) {
-//   const row = document.createElement('tr');
-//   table.tBodies[0].appendChild(row);
-
-//   const cell = document.createElement('td');
-//   cell.className = "left_rows"
-//   row.appendChild(cell);
-
-//   const a = document.createElement('a');
-//   a.href = link;
-//   a.target = '_blank';
-//   a.textContent = title;
-//   a.className = "hyperlink";
-//   // cell.appendChild(a);
-//   const authorsDiv = document.createElement('div');
-//   authors = authors.replace("Y Yao", '<b>Y Yao</b>');
-//   authorsDiv.innerHTML = authors;
-
-//   const pubDiv = document.createElement('div');
-//   pubDiv.className = "publisher";
-//   publisher = publisher + `<span class=extralink> [<a href="#" onclick="copyBibToClipboard('${bib}', event)">bib</a>]`;
-//   if (code != null) {
-//     publisher = publisher + ' [<a href=' + code + ' target="_blank">Code</a>]';
-
-//     if (project != null) {
-
-//       publisher = publisher + ' [<a href=' + project + ' target="_blank">Project</a>]';
-//     }
-
-//   }
-//   publisher = publisher + "</span>";
-
-//   pubDiv.innerHTML = publisher;
-//   const indexText = document.createTextNode(`${idx}. `);
-//   cell.appendChild(indexText); // Append the index text node to the cell
-
-//   cell.appendChild(a);
-//   cell.appendChild(authorsDiv);
-//   cell.appendChild(pubDiv);
-
-//   const yearDiv = document.createElement('td');
-//   yearDiv.className = "table_year";
-//   yearDiv.innerHTML = year;
-//   row.appendChild(yearDiv);
-// }
-
-createPubTable();
+  container.appendChild(table);
+});
 
 function copyBibToClipboard(bibText, event) {
   event.preventDefault();

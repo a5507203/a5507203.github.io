@@ -1,3 +1,4 @@
+// Awards data
 const awardsData = [
   "Outstanding Area Chair Award, ICML (2025)",
   "Outstanding Reviewer Award, UAI (2025)",
@@ -9,33 +10,10 @@ const awardsData = [
   "CSE Undergraduate Performance Prize (7th Place) (2018)"
 ];
 
-// Function to create a list with a heading
-function createList(entries) {
-    let section = document.createElement('section');
-
-
-    let list = document.createElement('ul');
-    list.className = 'news_list';
-    entries.forEach(entry => {
-        let item = document.createElement('li');
-        if (typeof entry === 'object') {
-            item.textContent = `${entry.conference}: ${entry.year || entry.years.join(', ')}`;
-        } else {
-            item.textContent = entry;
-        }
-        list.appendChild(item);
-    });
-
-    section.appendChild(list);
-    return section;
-}
-
-// Function to append the lists to the DOM
-function appendListsToDOM() {
-    const awards = createList(awardsData);
-    document.addEventListener("DOMContentLoaded", function (e) {
-        document.getElementById('awards').appendChild(awards);
-    });
-}
-
-appendListsToDOM()
+// Register awards section with ContentManager
+ContentManager.registerSection('awards', function(container) {
+  const section = document.createElement('section');
+  const list = ContentManager.createList(awardsData, 'news_list');
+  section.appendChild(list);
+  container.appendChild(section);
+});

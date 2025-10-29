@@ -1,6 +1,5 @@
-
+// Student supervision data
 const superviseData = [
-   
     {
         name: "Boye Niu",
         url: "#",
@@ -8,7 +7,6 @@ const superviseData = [
         institution: "The University of Sydney",
         details: '<b>Honors Student</b> in Statistics, 2024-Present'
     },
-
     {
         name: "Kai Lian",
         url: "#",
@@ -39,41 +37,18 @@ const superviseData = [
     }
 ];
 
-function createsuperviseTable(data) {
-    // Create table element
-    const table = document.createElement('table');
-    const tbody = document.createElement('tbody');
+// Register supervise section with ContentManager
+ContentManager.registerSection('supervise', function(container) {
+    const table = ContentManager.createTable();
 
-    // Iterate over the data to create rows
-    data.forEach(item => {
-        const tr = document.createElement('tr');
-        const td = document.createElement('td');
-        
-        if (item.coadvised!=""){
-        // Constructing the HTML content for the cell
-        td.innerHTML = `<div class="hyperlink"><a href="${item.url}" target="_blank">${item.name}</a> <small>(co-advised with ${item.coadvised})<small> </div>
-                        <div class="gray_font">${item.institution}</div>
-                        <div class="student">${item.details}</div>`;
-        }
-        else {
+    superviseData.forEach(item => {
+        const coadvisedText = item.coadvised ? ` <small>(co-advised with ${item.coadvised})</small>` : '';
+        const cellHtml = `<div class="hyperlink"><a href="${item.url}" target="_blank">${item.name}</a>${coadvisedText}</div>
+                         <div class="gray_font">${item.institution}</div>
+                         <div class="student">${item.details}</div>`;
 
-            td.innerHTML = `<div class="hyperlink"><a href="${item.url}" target="_blank">${item.name}</a>  </div>
-            <div class="gray_font">${item.institution}</div>
-            <div class="student">${item.details}</div>`;
-        }
-        // Append cell to the row, and row to the tbody
-        tr.appendChild(td);
-        tbody.appendChild(tr);
+        ContentManager.addTableRow(table, [{ html: cellHtml }]);
     });
 
-    // Append tbody to the table
-    table.appendChild(tbody);
-    document.addEventListener("DOMContentLoaded", function (e) {
-        document.getElementById('supervise').appendChild(table);
-    });
-    // Append the table to the document, for example, to a div with id 'tableContainer'
-    // document.getElementById('supervise').appendChild(table);
-}
-
-// Call the function to create and append the table
-createsuperviseTable(superviseData);
+    container.appendChild(table);
+});

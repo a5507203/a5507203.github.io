@@ -29,41 +29,26 @@ function refreshUI(event) {
 window.onresize = refreshUI;
 
 
-function changeMenu(id) {
+// Navigate to a specific menu section (using semantic names)
+function changeMenu(menuId) {
+    // Hide all sections first
+    const allSections = SiteConfig.getAllSections();
+    allSections.forEach(sectionId => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.style.display = "none";
+        }
+    });
 
-    var pubWrapper = document.getElementById("pubWrapper");
-    var activities = document.getElementById("activities");
-    var supervise = document.getElementById("supervise");
-    var awards = document.getElementById("awards");
-    var teaching = document.getElementById("teaching");
-    var news = document.getElementById("news");
-    var goal = document.getElementById("goal");
-
-    let l = [goal, news, supervise, pubWrapper, activities, teaching, awards]
-
-
-
-    for (e of l) {
-
-        e.style.display = "none";
-
-    }
-    l[id].style.display = "block";
-    if (id == 2) {
-        l[1].style.display = "block";
-        l[0].style.display = "block";
-    }
-
-
+    // Show sections for the selected menu
+    const sectionsToShow = SiteConfig.getSectionsForMenu(menuId);
+    sectionsToShow.forEach(sectionId => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.style.display = "block";
+        }
+    });
 
     refreshUI();
-
 }
 
-function openURL() {
-    // URL to open
-    var url = "https://calendly.com/yu_yao/meeting";
-
-    // Open the URL in a new browser tab
-    window.open(url, '_blank').focus();
-}

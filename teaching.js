@@ -1,5 +1,5 @@
+// Teaching and talks data
 const teachingData = [
-
     {
         role: "Lecturer",
         description: "Advanced Machine Learning",
@@ -38,44 +38,24 @@ const teachingData = [
     }
 ];
 
-function createTeachingTable(data) {
-    // Create table element
-    const table = document.createElement('table');
-    const tbody = document.createElement('tbody');
+// Register teaching section with ContentManager
+ContentManager.registerSection('teaching', function(container) {
+    const table = ContentManager.createTable();
 
-    // Iterate over the data to create rows
-    data.forEach(item => {
-        const tr = document.createElement('tr');
+    teachingData.forEach(item => {
+        const mainCellHtml = `<div class="hyperlink"><b>${item.role}</b>: ${item.description}</div>
+                             <div class="publisher">${item.institution}</div>`;
 
-        // Create first cell with role and description
-        const td1 = document.createElement('td');
-        td1.innerHTML = `<div class="hyperlink"><b>${item.role}</b>: ${item.description}</div>
-                         <div class="publisher">${item.institution}</div>`;
+        const yearCell = document.createElement('td');
+        yearCell.className = 'table_year';
+        yearCell.style.textAlign = 'right';
+        yearCell.textContent = item.year;
 
-        // Create second cell with year
-        const td2 = document.createElement('td');
-        td2.className = "table_year";
-        td2.style.textAlign = "right";
-        td2.textContent = item.year;
-
-        // Append cells to the row
-        tr.appendChild(td1);
-        tr.appendChild(td2);
-
-        // Append row to the tbody
-        tbody.appendChild(tr);
+        ContentManager.addTableRow(table, [
+            { html: mainCellHtml },
+            { element: yearCell }
+        ]);
     });
 
-    // Append tbody to the table
-    table.appendChild(tbody);
-
-    document.addEventListener("DOMContentLoaded", function (e) {
-        document.getElementById('teaching').appendChild(table);
-    });
-    // Append the table to the document, for example, to a div with id 'tableContainer'
-}
-
-// Call the function to create and append the table
-createTeachingTable(teachingData);
-
-
+    container.appendChild(table);
+});

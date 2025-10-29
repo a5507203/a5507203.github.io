@@ -1,9 +1,9 @@
-
+// Professional activities data
 const professional_activities = {
     "journal_editor": [
        "Action Editor: Transactions on Machine Learning Research"
     ],
-    
+
     "area_chair": [
         {
             "conference": "International Conference on Machine Learning (ICML)",
@@ -81,53 +81,29 @@ const professional_activities = {
     ]
 };
 
-
-
-function createListWithHeading(heading, entries) {
-    let section = document.createElement('section');
-    let headingElement = document.createElement('h3');
-    headingElement.textContent = heading;
-    section.appendChild(headingElement);
-
-    let list = document.createElement('ul');
-    list.className = 'news_list';
-    entries.forEach(entry => {
-        let item = document.createElement('li');
-        if (typeof entry === 'object') {
-            item.textContent = `${entry.conference}: ${entry.year || entry.years.join(', ')}`;
-        } else {
-            item.textContent = entry;
-        }
-        list.appendChild(item);
-    });
-
-    section.appendChild(list);
-    return section;
+// Helper to format entries (handles both objects and strings)
+function formatEntry(entry) {
+    if (typeof entry === 'object') {
+        return `${entry.conference}: ${entry.year || entry.years.join(', ')}`;
+    }
+    return entry;
 }
 
-// Function to append the lists to the DOM
-function appendServicesToDOM() {
+// Register services section with ContentManager
+ContentManager.registerSection('activities', function(container) {
+    // Journal Editor
+    const journalEditorItems = professional_activities.journal_editor.map(formatEntry);
+    container.appendChild(ContentManager.createSectionWithHeading('Journal Editor', journalEditorItems, 'news_list'));
 
-    const journalEditorSection = createListWithHeading('Journal Editor', professional_activities.journal_editor);
-    // Append Area Chair list with heading
-    const areaChairSection = createListWithHeading('Area Chair', professional_activities.area_chair);
-    // Append Conference Reviewer list with heading
-    const conferenceReviewerSection = createListWithHeading('Conference Reviewer', professional_activities.conference_reviewer);
-    // Append Journal Reviewer list with heading
-    const journalReviewerSection = createListWithHeading('Journal Reviewer', professional_activities.journal_reviewer);
-    
+    // Area Chair
+    const areaChairItems = professional_activities.area_chair.map(formatEntry);
+    container.appendChild(ContentManager.createSectionWithHeading('Area Chair', areaChairItems, 'news_list'));
 
-    document.addEventListener("DOMContentLoaded", function (e) {
-        const container = document.getElementById('activities'); 
-        container.appendChild(journalEditorSection);
-        container.appendChild(areaChairSection);
-        container.appendChild(conferenceReviewerSection);
-        container.appendChild(journalReviewerSection);
-    });
+    // Conference Reviewer
+    const conferenceReviewerItems = professional_activities.conference_reviewer.map(formatEntry);
+    container.appendChild(ContentManager.createSectionWithHeading('Conference Reviewer', conferenceReviewerItems, 'news_list'));
 
-
-}
-
-appendServicesToDOM()
-
-
+    // Journal Reviewer
+    const journalReviewerItems = professional_activities.journal_reviewer.map(formatEntry);
+    container.appendChild(ContentManager.createSectionWithHeading('Journal Reviewer', journalReviewerItems, 'news_list'));
+});
