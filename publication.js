@@ -1,22 +1,82 @@
 const publicationData = [
 
   {
-    "link": "",
-    "title": "Can Dependencies Induced by LLM-Agent Workflows Be Trusted?",
-    "authors": "Y Yao, Y Song, Y Xie, M Fan, M Guo, T Liu",
+    "link": "https://arxiv.org/abs/2610.06021",
+    "title": "Scalable Minimal-Change Learning for Controllable Image Editing",
+    "authors": "S Chen, F Huang, Y Yao, M Gong, T Liu",
     "publisher": "NeurIPS",
-    "year": "2025",
-    "bib": "online soon",
+    "year": "2026",
+    "bib": "@inproceedings{chen2026scalable, title={Scalable Minimal-Change Learning for Controllable Image Editing}, author={Chen, Shuo and Huang, Fengming and Yao, Yu and Gong, Mingming and Liu, Tongliang}, booktitle={Advances in Neural Information Processing Systems}, year={2026}}",
+    "code": "https://github.com/Showwwwwwwww/ARRO",
+    "project": null
+  },
+  {
+    "link": "https://arxiv.org/abs/2610.08647",
+    "title": "SquidAgent: Parallelize Wisely, Coordinate Efficiently",
+    "authors": "Y Lin, S Ye, Y Yao, Z Fang, B Han, T Liu",
+    "publisher": "NeurIPS",
+    "year": "2026",
+    "bib": "@inproceedings{lin2026squidagent, title={SquidAgent: Parallelize Wisely, Coordinate Efficiently}, author={Lin, Yexiong and Ye, Shanshan and Yao, Yu and Fang, Zhen and Han, Bo and Liu, Tongliang}, booktitle={Advances in Neural Information Processing Systems}, year={2026}}",
+    "code": "https://github.com/tmllab/2026_NeurIPS_SquidAgent",
+    "project": "https://yexionglin.github.io/SquidAgent_Demo/"
+  },
+  {
+    "link": "https://arxiv.org/abs/2603.19822",
+    "title": "HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks",
+    "authors": "J Guo, Z Chen, Z Li, Z Gao, J Huang, H Zhang, F Huang, Y Yao, T Liu, M Gong",
+    "publisher": "ECCV",
+    "year": "2026",
+    "bib": "@inproceedings{guo2026hugebench, title={HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks}, author={Guo, Jingyu and Chen, Ziye and Li, Ziwen and Gao, Zhengqing and Huang, Jiaxin and Zhang, Hanlue and Huang, Fengming and Yao, Yu and Liu, Tongliang and Gong, Mingming}, booktitle={European Conference on Computer Vision}, year={2026}}",
     "code": null,
     "project": null
   },
   {
-    "link": "",
+    "link": "https://www.jmlr.org/papers/v27/23-1102.html",
+    "title": "Do We Need to Penalize Variance of Losses for Learning with Label Noise?",
+    "authors": "Y Lin, Y Yao, Y Du, J Yu, B Han, M Gong, T Liu",
+    "publisher": "JMLR",
+    "year": "2026",
+    "bib": "@article{lin2026variance, title={Do We Need to Penalize Variance of Losses for Learning with Label Noise?}, author={Lin, Yexiong and Yao, Yu and Du, Yuxuan and Yu, Jun and Han, Bo and Gong, Mingming and Liu, Tongliang}, journal={Journal of Machine Learning Research}, volume={27}, number={57}, pages={1--38}, year={2026}}",
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "https://arxiv.org/abs/2505.23346",
+    "title": "Beyond Optimal Transport: Model-Aligned Coupling for Flow Matching",
+    "authors": "Y Lin, Y Yao, Y Zhou, T Liu",
+    "publisher": "CVPR",
+    "year": "2026",
+    "bib": "@inproceedings{lin2026beyond, title={Beyond Optimal Transport: Model-Aligned Coupling for Flow Matching}, author={Lin, Yexiong and Yao, Yu and Zhou, Yang and Liu, Tongliang}, booktitle={Findings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages={3955--3964}, year={2026}}",
+    "code": null,
+    "project": "https://yexionglin.github.io/mac"
+  },
+  {
+    "link": "https://doi.org/10.1109/TPAMI.2025.3595613",
+    "title": "Improving the Instance-Dependent Transition Matrix Estimation by Exploiting Self-Supervised Learning",
+    "authors": "Y Lin, Y Yao, Z Wang, X Shen, J Yu, B Han, T Liu",
+    "publisher": "TPAMI",
+    "year": "2025",
+    "bib": "@article{lin2025improving, title={Improving the Instance-Dependent Transition Matrix Estimation by Exploiting Self-Supervised Learning}, author={Lin, Yexiong and Yao, Yu and Wang, Zhaoqing and Shen, Xu and Yu, Jun and Han, Bo and Liu, Tongliang}, journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, year={2025}, doi={10.1109/TPAMI.2025.3595613}}",
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "https://openreview.net/forum?id=rDqZjKIeda",
+    "title": "Can Dependencies Induced by LLM-Agent Workflows Be Trusted?",
+    "authors": "Y Yao, Y Song, Y Xie, M Fan, M Guo, T Liu",
+    "publisher": "NeurIPS",
+    "year": "2025",
+    "bib": "@inproceedings{yao2025dependencies, title={Can Dependencies Induced by LLM-Agent Workflows Be Trusted?}, author={Yao, Yu and Song, Yiliao and Xie, Yian and Fan, Mengdan and Guo, Mingyu and Liu, Tongliang}, booktitle={Advances in Neural Information Processing Systems}, year={2025}}",
+    "code": null,
+    "project": null
+  },
+  {
+    "link": "https://openreview.net/forum?id=I0hRN2HMeH",
     "title": "Aligning What Matters: Masked Latent Adaptation for Text-to-Audio-Video Generation",
     "authors": "J Zheng, S Pan, Y Yao, Z Wang, D Wang, T Liu",
     "publisher": "NeurIPS",
     "year": "2025",
-    "bib": "online soon",
+    "bib": "@inproceedings{zheng2025aligning, title={Aligning What Matters: Masked Latent Adaptation for Text-to-Audio-Video Generation}, author={Zheng, Jiyang and Pan, Siqi and Yao, Yu and Wang, Zhaoqing and Wang, Dadong and Liu, Tongliang}, booktitle={Advances in Neural Information Processing Systems}, year={2025}}",
     "code": null,
     "project": null
   },

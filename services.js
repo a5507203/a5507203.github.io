@@ -4,6 +4,12 @@ const professional_activities = {
        "Action Editor: Transactions on Machine Learning Research"
     ],
 
+    "senior_area_chair": [
+        {
+            "conference": "International Conference on Machine Learning (ICML)",
+            "years": ["2027"]
+        }
+    ],
     "area_chair": [
         {
             "conference": "International Conference on Machine Learning (ICML)",
@@ -94,6 +100,10 @@ ContentManager.registerSection('activities', function(container) {
     // Journal Editor
     const journalEditorItems = professional_activities.journal_editor.map(formatEntry);
     container.appendChild(ContentManager.createSectionWithHeading('Journal Editor', journalEditorItems, 'news_list'));
+
+    // Senior Area Chair
+    const seniorAreaChairItems = professional_activities.senior_area_chair.map(formatEntry);
+    container.appendChild(ContentManager.createSectionWithHeading('Senior Area Chair', seniorAreaChairItems, 'news_list'));
 
     // Area Chair
     const areaChairItems = professional_activities.area_chair.map(formatEntry);
